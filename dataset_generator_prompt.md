@@ -2,6 +2,7 @@
 
 Generate road-based navigation queries that involve multiple stops, time constraints, and specific route preferences (e.g., avoiding highways, using the fastest route, scenic routes, or gas stations). Provide the corresponding structured data in JSON format with fields: query, start, stops, end, arrive_by (if relevant), avoid (e.g., highways), preference (e.g., fastest), and any other necessary details. For example,
 
+```
   [
     {
         "query": "I need to go to my friend's house, then pick up a package from the post office, and finally head home before 7 PM.",
@@ -70,3 +71,4 @@ Generate road-based navigation queries that involve multiple stops, time constra
         },
     },
   ]
+```
