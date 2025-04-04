@@ -1,0 +1,3161 @@
+[
+    {
+        "query": "Route from school to museum with a lunch stop at a sandwich shop and avoiding narrow streets.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "sandwich shop"
+            ],
+            "end": "museum",
+            "avoid": [
+                "narrow_streets"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from mall to home with a visit to car wash and pick up groceries at the supermarket.",
+        "structured": {
+            "start": "mall",
+            "stops": [
+                "car wash",
+                "supermarket"
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Plan a drive from hotel to office via two clients\u2019 locations and avoid downtown routes.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "client1",
+                "client2"
+            ],
+            "end": "office",
+            "avoid": [
+                "downtown"
+            ]
+        }
+    },
+    {
+        "query": "Take me from gym to pharmacy and then drop me at a movie theater avoiding school zones.",
+        "structured": {
+            "start": "gym",
+            "stops": [
+                "pharmacy"
+            ],
+            "end": "movie theater",
+            "avoid": [
+                "school_zones"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from downtown to park with scenic route and stop at garden center and florist.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                "garden center",
+                "florist"
+            ],
+            "end": "park",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan my drive from store to cousin\u2019s house with a fast route avoiding construction.",
+        "structured": {
+            "start": "store",
+            "end": "cousin's house",
+            "preference": "fastest",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Drive me to yoga class and stop at smoothie bar and print shop on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "smoothie bar",
+                "print shop"
+            ],
+            "end": "yoga class"
+        }
+    },
+    {
+        "query": "Route from DFW Airport to Arlington with a mandatory stop at In-N-Out Burger and avoid rush hour traffic.",
+        "structured": {
+            "start": "DFW Airport",
+            "stops": [
+                "In-N-Out Burger"
+            ],
+            "end": "Arlington",
+            "avoid": [
+                "rush_hour"
+            ]
+        }
+    },
+    {
+        "query": "Go from school to doctor\u2019s clinic with stops at bakery and school supply shop.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "bakery",
+                "school supply shop"
+            ],
+            "end": "doctor\u2019s clinic"
+        }
+    },
+    {
+        "query": "Take a road trip from San Jose to Sacramento stopping at rest stops every 90 minutes.",
+        "structured": {
+            "start": "San Jose",
+            "end": "Sacramento",
+            "rest_interval": "90m"
+        }
+    },
+    {
+        "query": "Drive from motel to repair shop via laundromat and supermarket avoiding sharp curves.",
+        "structured": {
+            "start": "motel",
+            "stops": [
+                "laundromat",
+                "supermarket"
+            ],
+            "end": "repair shop",
+            "avoid": [
+                "sharp_curves"
+            ]
+        }
+    },
+    {
+        "query": "I need to go from university to bus terminal stopping by stationery shop and pizza place.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "stationery shop",
+                "pizza place"
+            ],
+            "end": "bus terminal"
+        }
+    },
+    {
+        "query": "Navigate to museum from office and stop by electronics store and fuel station avoiding detours.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "electronics store",
+                "fuel station"
+            ],
+            "end": "museum",
+            "avoid": [
+                "detours"
+            ]
+        }
+    },
+    {
+        "query": "Route from apartment to library with stops at friend\u2019s place and the farmer\u2019s market avoiding construction areas.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "friend\u2019s house",
+                "farmer\u2019s market"
+            ],
+            "end": "library",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Drive from city center to suburban mall via golf course and charging station with a scenic route.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                "golf course",
+                "charging station"
+            ],
+            "end": "suburban mall",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan a delivery route from store to customer\u2019s house with stops at packaging center and fuel stop.",
+        "structured": {
+            "start": "store",
+            "stops": [
+                "packaging center",
+                "fuel stop"
+            ],
+            "end": "customer\u2019s house"
+        }
+    },
+    {
+        "query": "Drive from park to music concert with stops at ice cream shop and gift shop avoiding expressways.",
+        "structured": {
+            "start": "park",
+            "stops": [
+                "ice cream shop",
+                "gift shop"
+            ],
+            "end": "concert",
+            "avoid": [
+                "expressways"
+            ]
+        }
+    },
+    {
+        "query": "Go from car rental location to stadium with stops at ATM and convenience store.",
+        "structured": {
+            "start": "car rental location",
+            "stops": [
+                "ATM",
+                "convenience store"
+            ],
+            "end": "stadium"
+        }
+    },
+    {
+        "query": "Route from my hostel to the lab with breakfast stop at diner and drop off parcel at post office.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "diner",
+                "post office"
+            ],
+            "end": "lab"
+        }
+    },
+    {
+        "query": "Drive me from university dorm to temple stopping at florist and avoiding roadblocks.",
+        "structured": {
+            "start": "university dorm",
+            "stops": [
+                "florist"
+            ],
+            "end": "temple",
+            "avoid": [
+                "roadblocks"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from my house to university with stops at print center, bank, and photocopy shop.",
+        "structured": {
+            "start": "house",
+            "stops": [
+                "print center",
+                "bank",
+                "photocopy shop"
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "Go from office to grocery store then gym and reach by 7 PM avoiding busy intersections.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "grocery store"
+            ],
+            "end": "gym",
+            "arrive_by": "19:00",
+            "avoid": [
+                "busy_intersections"
+            ]
+        }
+    },
+    {
+        "query": "Plan my evening drive to restaurant via a sunset point and city overlook avoiding tunnels.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "sunset point",
+                "city overlook"
+            ],
+            "end": "restaurant",
+            "avoid": [
+                "tunnels"
+            ]
+        }
+    },
+    {
+        "query": "Take me from college to a job interview with a formal wear pickup on the way.",
+        "structured": {
+            "start": "college",
+            "stops": [
+                "formal wear store"
+            ],
+            "end": "interview location"
+        }
+    },
+    {
+        "query": "Drive me from office to airport with a stop at baby care store and avoid toll roads and fog.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "baby care store"
+            ],
+            "end": "airport",
+            "avoid": [
+                "tolls"
+            ],
+            "avoid_weather": "fog"
+        }
+    },
+    {
+        "query": "Navigate to town square from apartment with pickup at friend\u2019s dorm and pizza delivery drop.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "friend\u2019s dorm",
+                "pizza delivery"
+            ],
+            "end": "town square"
+        }
+    },
+    {
+        "query": "Plan my drive to my aunt\u2019s place with stop at grocery and pick up a parcel from courier office.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery",
+                "courier office"
+            ],
+            "end": "aunt's place"
+        }
+    },
+    {
+        "query": "Go from hotel to concert hall with sightseeing stop at downtown tower and dessert at ice cream parlor.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "downtown tower",
+                "ice cream parlor"
+            ],
+            "end": "concert hall"
+        }
+    },
+    {
+        "query": "Route from coworking space to meetup point with bakery stop and gift pickup avoiding festival traffic.",
+        "structured": {
+            "start": "coworking space",
+            "stops": [
+                "bakery",
+                "gift shop"
+            ],
+            "end": "meetup point",
+            "avoid": [
+                "festival_traffic"
+            ]
+        }
+    },
+    {
+        "query": "Drive from train station to relative's house with stop at electronics service center and lunch caf\u00e9.",
+        "structured": {
+            "start": "train station",
+            "stops": [
+                "electronics service center",
+                "lunch caf\u00e9"
+            ],
+            "end": "relative's house"
+        }
+    },
+    {
+        "query": "Navigate from shopping center to airport with a detour to sightseeing spot and avoid windy routes.",
+        "structured": {
+            "start": "shopping center",
+            "stops": [
+                "sightseeing spot"
+            ],
+            "end": "airport",
+            "avoid": [
+                "windy_routes"
+            ]
+        }
+    },
+    {
+        "query": "Plan a trip from my place to hiking trail with camping supply pickup and lake photo stop.",
+        "structured": {
+            "start": "my place",
+            "stops": [
+                "camping store",
+                "lake"
+            ],
+            "end": "hiking trail"
+        }
+    },
+    {
+        "query": "Take me from my house to the mall with a stop at the bakery and avoid busy streets.",
+        "structured": {
+            "start": "my house",
+            "stops": [
+                "bakery"
+            ],
+            "end": "mall",
+            "avoid": [
+                "busy_streets"
+            ]
+        }
+    },
+    {
+        "query": "Drive from downtown to the airport with a stop at the coffee shop and avoid traffic jams.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                "coffee shop"
+            ],
+            "end": "airport",
+            "avoid": [
+                "traffic_jams"
+            ]
+        }
+    },
+    {
+        "query": "Route from my apartment to the grocery store with a stop at the gym and avoid construction zones.",
+        "structured": {
+            "start": "my apartment",
+            "stops": [
+                "gym"
+            ],
+            "end": "grocery store",
+            "avoid": [
+                "construction_zones"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from my office to the park with a stop at the library and avoid toll roads.",
+        "structured": {
+            "start": "my office",
+            "stops": [
+                "library"
+            ],
+            "end": "park",
+            "avoid": [
+                "toll_roads"
+            ]
+        }
+    },
+    {
+        "query": "Plan a trip from my house to the beach with a stop at the gas station and avoid highways.",
+        "structured": {
+            "start": "my house",
+            "stops": [
+                "gas station"
+            ],
+            "end": "beach",
+            "avoid": [
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Drive from my home to the university stopping at a coffee shop, ATM, and drop a friend at the metro station.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "coffee shop",
+                "ATM",
+                "metro station"
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "Plan a route from the train station to the hotel with a stop at a vegetarian restaurant and avoid heavy traffic.",
+        "structured": {
+            "start": "train station",
+            "stops": [
+                "vegetarian restaurant"
+            ],
+            "end": "hotel",
+            "avoid": [
+                "traffic"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the DMV office before 3 PM with a brief stop at the electronics store and a gas station.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "electronics store",
+                "gas station"
+            ],
+            "end": "DMV office",
+            "arrive_by": "15:00"
+        }
+    },
+    {
+        "query": "Drive from airport to conference center stopping at Starbucks and avoid toll roads.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "Starbucks"
+            ],
+            "end": "conference center",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Plan a scenic trip from city center to lakeside resort with stops at vineyard and lookout point.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                "vineyard",
+                "lookout point"
+            ],
+            "end": "lakeside resort",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Drive from my hotel to the stadium with a lunch stop at Taco Bell and avoiding construction zones.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "Taco Bell"
+            ],
+            "end": "stadium",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from office to downtown mall with stops at dry cleaner and cobbler shop and reach before 5 PM.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "dry cleaner",
+                "cobbler shop"
+            ],
+            "end": "downtown mall",
+            "arrive_by": "17:00"
+        }
+    },
+    {
+        "query": "Route from university to tech park with stops at printer shop, bookstore, and avoid highways.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "printer shop",
+                "bookstore"
+            ],
+            "end": "tech park",
+            "avoid": [
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Drive from my friend's house to home via bakery, flower shop, and pharmacy avoiding downtown.",
+        "structured": {
+            "start": "friend's house",
+            "stops": [
+                "bakery",
+                "flower shop",
+                "pharmacy"
+            ],
+            "end": "home",
+            "avoid": [
+                "downtown"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the waterpark with a stop at sports store and pick up cousins from their school.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "sports store",
+                "school"
+            ],
+            "end": "waterpark"
+        }
+    },
+    {
+        "query": "Plan a route from the motel to hospital with pharmacy pickup and breakfast at Denny\u2019s.",
+        "structured": {
+            "start": "motel",
+            "stops": [
+                "pharmacy",
+                "Denny\u2019s"
+            ],
+            "end": "hospital"
+        }
+    },
+    {
+        "query": "Drive from campus to museum and take a detour to see the city bridge and old cathedral.",
+        "structured": {
+            "start": "campus",
+            "stops": [
+                "city bridge",
+                "old cathedral"
+            ],
+            "end": "museum"
+        }
+    },
+    {
+        "query": "I need to reach the train station by 9:30 AM with a grocery pickup and dropping off documents at the office.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery store",
+                "office"
+            ],
+            "end": "train station",
+            "arrive_by": "09:30"
+        }
+    },
+    {
+        "query": "Navigate from mall to aunt\u2019s house stopping at chocolate store and avoiding accident zones.",
+        "structured": {
+            "start": "mall",
+            "stops": [
+                "chocolate store"
+            ],
+            "end": "aunt\u2019s house",
+            "avoid": [
+                "accident_zones"
+            ]
+        }
+    },
+    {
+        "query": "Plan an efficient route from hotel to business center with multiple pickups at client offices.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "client1",
+                "client2"
+            ],
+            "end": "business center",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Take me to the library with a route that avoids roads affected by snowfall.",
+        "structured": {
+            "start": "current_location",
+            "end": "library",
+            "avoid_weather": "snow"
+        }
+    },
+    {
+        "query": "Drive from gym to friend\u2019s place with a smoothie stop and dog food pickup.",
+        "structured": {
+            "start": "gym",
+            "stops": [
+                "smoothie bar",
+                "pet store"
+            ],
+            "end": "friend\u2019s place"
+        }
+    },
+    {
+        "query": "Navigate from school to hospital with a stop to pick up medicine and avoiding steep slopes.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "pharmacy"
+            ],
+            "end": "hospital",
+            "avoid": [
+                "steep_slopes"
+            ]
+        }
+    },
+    {
+        "query": "Plan a weekend trip to the hills with EV charging every 80 miles and scenic route preference.",
+        "structured": {
+            "start": "current_location",
+            "end": "hills",
+            "vehicle": "EV",
+            "charge_interval": 80,
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Drive from apartment to beach with a seafood stop and souvenir shopping avoiding bridges.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "seafood restaurant",
+                "souvenir shop"
+            ],
+            "end": "beach",
+            "avoid": [
+                "bridges"
+            ]
+        }
+    },
+    {
+        "query": "I need to reach the police station by 2 PM, stopping at city council and post office.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "city council",
+                "post office"
+            ],
+            "end": "police station",
+            "arrive_by": "14:00"
+        }
+    },
+    {
+        "query": "Route from concert venue to hotel via night market and fuel refill avoiding blocked roads.",
+        "structured": {
+            "start": "concert venue",
+            "stops": [
+                "night market",
+                "fuel station"
+            ],
+            "end": "hotel",
+            "avoid": [
+                "blocked roads"
+            ]
+        }
+    },
+    {
+        "query": "Take me from home to the kids' school with a stop at cake shop and toy store before 8 AM.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "cake shop",
+                "toy store"
+            ],
+            "end": "school",
+            "arrive_by": "08:00"
+        }
+    },
+    {
+        "query": "Navigate from tech park to co-working caf\u00e9 with stops at mobile repair shop and ATM avoiding rush hours.",
+        "structured": {
+            "start": "tech park",
+            "stops": [
+                "mobile repair",
+                "ATM"
+            ],
+            "end": "co-working caf\u00e9",
+            "avoid": [
+                "rush_hour"
+            ]
+        }
+    },
+    {
+        "query": "Drive from home to bus terminal stopping at gift store and bookstore avoiding express lanes.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "gift store",
+                "bookstore"
+            ],
+            "end": "bus terminal",
+            "avoid": [
+                "express_lanes"
+            ]
+        }
+    },
+    {
+        "query": "Plan a family road trip from city to mountain lodge with stops at amusement park and wildlife center.",
+        "structured": {
+            "start": "city",
+            "stops": [
+                "amusement park",
+                "wildlife center"
+            ],
+            "end": "mountain lodge"
+        }
+    },
+    {
+        "query": "Take me from airport to downtown via breakfast stop and pickup of suit from dry cleaner.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "breakfast caf\u00e9",
+                "dry cleaner"
+            ],
+            "end": "downtown"
+        }
+    },
+    {
+        "query": "Drive from hostel to university via bicycle shop and tea stall avoiding morning congestion.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "bicycle shop",
+                "tea stall"
+            ],
+            "end": "university",
+            "avoid": [
+                "morning_congestion"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from friend\u2019s apartment to the cinema with a brief gym visit and burger stop.",
+        "structured": {
+            "start": "friend\u2019s apartment",
+            "stops": [
+                "gym",
+                "burger place"
+            ],
+            "end": "cinema"
+        }
+    },
+    {
+        "query": "Plan a quick route from office to flower market with stop at bakery avoiding festival roads.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "bakery"
+            ],
+            "end": "flower market",
+            "avoid": [
+                "festival_traffic"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from dorm to registrar\u2019s office via bookstore and academic counselor avoiding campus events.",
+        "structured": {
+            "start": "dorm",
+            "stops": [
+                "bookstore",
+                "academic counselor"
+            ],
+            "end": "registrar\u2019s office",
+            "avoid": [
+                "campus_events"
+            ]
+        }
+    },
+    {
+        "query": "Route from home to vet clinic stopping at park for a dog walk and avoiding steep roads.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "park"
+            ],
+            "end": "vet clinic",
+            "avoid": [
+                "steep"
+            ]
+        }
+    },
+    {
+        "query": "Take me to shopping mall after lunch at sushi restaurant and stopping by home decor store.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "sushi restaurant",
+                "home decor store"
+            ],
+            "end": "shopping mall"
+        }
+    },
+    {
+        "query": "Drive from school to music class with stops at craft store and ice cream shop avoiding pedestrian-only zones.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "craft store",
+                "ice cream shop"
+            ],
+            "end": "music class",
+            "avoid": [
+                "pedestrian_only"
+            ]
+        }
+    },
+    {
+        "query": "Plan a city tour starting from hotel with stops at art museum, stadium, and historical plaza.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "art museum",
+                "stadium",
+                "historical plaza"
+            ],
+            "end": "hotel"
+        }
+    },
+    {
+        "query": "Navigate from airport to university dorm with stops at sim card shop and mobile store.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "sim card shop",
+                "mobile store"
+            ],
+            "end": "university dorm"
+        }
+    },
+    {
+        "query": "Drive from food court to city gallery stopping at car showroom and avoiding slippery roads.",
+        "structured": {
+            "start": "food court",
+            "stops": [
+                "car showroom"
+            ],
+            "end": "city gallery",
+            "avoid": [
+                "slippery"
+            ]
+        }
+    },
+    {
+        "query": "Route from garage to apartment via antique store and vegetable market with fast route.",
+        "structured": {
+            "start": "garage",
+            "stops": [
+                "antique store",
+                "vegetable market"
+            ],
+            "end": "apartment",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Take me from hotel to seminar hall with stops at ATM, tailor, and quick bite restaurant.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "ATM",
+                "tailor",
+                "restaurant"
+            ],
+            "end": "seminar hall"
+        }
+    },
+    {
+        "query": "Plan a fuel-efficient drive from my place to the botanical gardens with bakery stop.",
+        "structured": {
+            "start": "my place",
+            "stops": [
+                "bakery"
+            ],
+            "end": "botanical gardens",
+            "preference": "fuel_efficient"
+        }
+    },
+    {
+        "query": "Drive from coworking space to rooftop caf\u00e9 stopping by grocery pickup and car battery shop.",
+        "structured": {
+            "start": "coworking space",
+            "stops": [
+                "grocery store",
+                "battery shop"
+            ],
+            "end": "rooftop caf\u00e9"
+        }
+    },
+    {
+        "query": "Route from college to photography studio with coffee break and friend\u2019s pickup avoiding muddy roads.",
+        "structured": {
+            "start": "college",
+            "stops": [
+                "coffee shop",
+                "friend's house"
+            ],
+            "end": "photography studio",
+            "avoid": [
+                "muddy roads"
+            ]
+        }
+    },
+    {
+        "query": "Take me from train station to resort stopping at travel agency and picnic shop.",
+        "structured": {
+            "start": "train station",
+            "stops": [
+                "travel agency",
+                "picnic shop"
+            ],
+            "end": "resort"
+        }
+    },
+    {
+        "query": "Plan a route to airport stopping at uncle\u2019s house and avoiding marathon roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "uncle's house"
+            ],
+            "end": "airport",
+            "avoid": [
+                "marathon_routes"
+            ]
+        }
+    },
+    {
+        "query": "Drive from metro station to kids\u2019 school via lunchbox pickup and clothes drop at dry cleaner.",
+        "structured": {
+            "start": "metro station",
+            "stops": [
+                "lunchbox store",
+                "dry cleaner"
+            ],
+            "end": "school"
+        }
+    },
+    {
+        "query": "Route from town hall to city outskirts with a stop at animal shelter and pet food store avoiding bumpy roads.",
+        "structured": {
+            "start": "town hall",
+            "stops": [
+                "animal shelter",
+                "pet food store"
+            ],
+            "end": "city outskirts",
+            "avoid": [
+                "bumpy roads"
+            ]
+        }
+    },
+    {
+        "query": "I need to visit the consulate by 11 AM with a stop at the embassy and passport photo center.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "embassy",
+                "passport photo center"
+            ],
+            "end": "consulate",
+            "arrive_by": "11:00"
+        }
+    },
+    {
+        "query": "Plan my route from downtown to the tech meetup with stops at Best Buy, lunch caf\u00e9, and avoid tunnels.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                "Best Buy",
+                "lunch caf\u00e9"
+            ],
+            "end": "tech meetup",
+            "avoid": [
+                "tunnels"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from apartment to temple with pickup at cousin's home and stop at sweet shop.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "cousin's home",
+                "sweet shop"
+            ],
+            "end": "temple"
+        }
+    },
+    {
+        "query": "Navigate to the nearest car service center avoiding all roads under construction.",
+        "structured": {
+            "search": "car service center",
+            "location": "nearest",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Plan a late night drive from college to friend's house stopping at pizza hut and taking only well-lit streets.",
+        "structured": {
+            "start": "college",
+            "stops": [
+                "pizza hut"
+            ],
+            "end": "friend's house",
+            "preference": "well_lit"
+        }
+    },
+    {
+        "query": "Take me to the art supply store and then to the painting class avoiding parades downtown.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "art supply store"
+            ],
+            "end": "painting class",
+            "avoid": [
+                "parade routes"
+            ]
+        }
+    },
+    {
+        "query": "Drive from the dorm to train station with pickup at roommate\u2019s house and stop at grocery for snacks.",
+        "structured": {
+            "start": "dorm",
+            "stops": [
+                "roommate\u2019s house",
+                "grocery store"
+            ],
+            "end": "train station"
+        }
+    },
+    {
+        "query": "Plan my route from gym to therapist office with tea stop and avoid bumpy roads.",
+        "structured": {
+            "start": "gym",
+            "stops": [
+                "tea shop"
+            ],
+            "end": "therapist office",
+            "avoid": [
+                "bumpy roads"
+            ]
+        }
+    },
+    {
+        "query": "I need to go to hospital immediately and also find the fastest pharmacy on the way.",
+        "structured": {
+            "start": "current_location",
+            "end": "hospital",
+            "search": "pharmacy",
+            "location": "on_route",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Route me to the mall by avoiding toll roads and include a fuel stop and lunch break.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "fuel station",
+                "lunch spot"
+            ],
+            "end": "mall",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the beach with picnic pickup and stop at scenic lookout avoiding highway traffic.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "picnic shop",
+                "scenic lookout"
+            ],
+            "end": "beach",
+            "avoid": [
+                "highway_traffic"
+            ]
+        }
+    },
+    {
+        "query": "Take me from the airport to the university via a bank, bookstore, and coffee shop.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "bank",
+                "bookstore",
+                "coffee shop"
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "Drive to my grandmother\u2019s house with stops at temple and fruit market, and avoid narrow alleys.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "temple",
+                "fruit market"
+            ],
+            "end": "grandmother\u2019s house",
+            "avoid": [
+                "narrow_alleys"
+            ]
+        }
+    },
+    {
+        "query": "I want to leave office and go to the doctor\u2019s clinic with a quick dinner stop and avoiding school zones.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "restaurant"
+            ],
+            "end": "doctor\u2019s clinic",
+            "avoid": [
+                "school_zones"
+            ]
+        }
+    },
+    {
+        "query": "Plan an early morning route to the hiking trail with stops at donut shop and rest stop, avoid fog-prone roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "donut shop",
+                "rest stop"
+            ],
+            "end": "hiking trail",
+            "avoid_weather": "fog"
+        }
+    },
+    {
+        "query": "Navigate to the yoga center through the park road and stop at the florist.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "florist"
+            ],
+            "end": "yoga center",
+            "route_via": [
+                "park road"
+            ]
+        }
+    },
+    {
+        "query": "Drive from hostel to visa center with a detour to photography studio and stop at Xerox center.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "photography studio",
+                "Xerox center"
+            ],
+            "end": "visa center"
+        }
+    },
+    {
+        "query": "Route from college to government office with lunch at vegan caf\u00e9 and pick up ID from police station.",
+        "structured": {
+            "start": "college",
+            "stops": [
+                "vegan caf\u00e9",
+                "police station"
+            ],
+            "end": "government office"
+        }
+    },
+    {
+        "query": "Plan my route from home to the airport with a surprise pickup at cake shop and avoid tunnels.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "cake shop"
+            ],
+            "end": "airport",
+            "avoid": [
+                "tunnels"
+            ]
+        }
+    },
+    {
+        "query": "Drive from motel to racecourse stopping at mechanic, fuel station, and breakfast diner avoiding busy roads.",
+        "structured": {
+            "start": "motel",
+            "stops": [
+                "mechanic",
+                "fuel station",
+                "diner"
+            ],
+            "end": "racecourse",
+            "avoid": [
+                "busy roads"
+            ]
+        }
+    },
+    {
+        "query": "I want to go to the workshop from downtown with stops at public library and office depot avoiding city center.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                "public library",
+                "office depot"
+            ],
+            "end": "workshop",
+            "avoid": [
+                "city center"
+            ]
+        }
+    },
+    {
+        "query": "Drive from workplace to sports complex via electronics store and stopping at ATM avoiding rainy areas.",
+        "structured": {
+            "start": "workplace",
+            "stops": [
+                "electronics store",
+                "ATM"
+            ],
+            "end": "sports complex",
+            "avoid_weather": "rain"
+        }
+    },
+    {
+        "query": "Plan my route to the dentist from friend\u2019s house with a stop at health store and avoid steep inclines.",
+        "structured": {
+            "start": "friend\u2019s house",
+            "stops": [
+                "health store"
+            ],
+            "end": "dentist",
+            "avoid": [
+                "steep_inclines"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the farmer\u2019s market with bakery pickup and flower shop visit avoiding roadwork zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bakery",
+                "flower shop"
+            ],
+            "end": "farmer\u2019s market",
+            "avoid": [
+                "roadwork"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from hotel to skate park with stop at sports store and avoiding pedestrian zones.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "sports store"
+            ],
+            "end": "skate park",
+            "avoid": [
+                "pedestrian_zones"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the courthouse after picking up documents at city office and avoid weekend market area.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "city office"
+            ],
+            "end": "courthouse",
+            "avoid": [
+                "weekend_market"
+            ]
+        }
+    },
+    {
+        "query": "Route from hostel to exam center with stops at pen shop and printing store avoiding all red zones.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "pen shop",
+                "printing store"
+            ],
+            "end": "exam center",
+            "avoid": [
+                "red zones"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the community center with a stop at toy donation bin and lunch at food truck avoiding rush hour.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "toy donation bin",
+                "food truck"
+            ],
+            "end": "community center",
+            "avoid": [
+                "rush hour"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the hardware store after picking cousin from library and visit pharmacy before heading home.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "library",
+                "pharmacy"
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Plan an evening drive to the lake with pickup at uncle\u2019s house and avoid areas with poor lighting.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "uncle\u2019s house"
+            ],
+            "end": "lake",
+            "avoid": [
+                "poor_lighting"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from apartment to pool with stops at chemist and ice cream shop avoiding flooded roads.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "chemist",
+                "ice cream shop"
+            ],
+            "end": "pool",
+            "avoid_weather": "flooding"
+        }
+    },
+    {
+        "query": "Drive to the airport with EV charging every 120 miles and stop at cousin's bakery.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "cousin's bakery"
+            ],
+            "end": "airport",
+            "vehicle": "EV",
+            "charge_interval": 120
+        }
+    },
+    {
+        "query": "Plan my ride from gym to mechanic with juice stop and avoid sports stadium area today.",
+        "structured": {
+            "start": "gym",
+            "stops": [
+                "juice bar"
+            ],
+            "end": "mechanic",
+            "avoid": [
+                "stadium"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the art fair via a friend\u2019s studio and gift shop, avoid roads with bike races.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend\u2019s studio",
+                "gift shop"
+            ],
+            "end": "art fair",
+            "avoid": [
+                "bike_race_routes"
+            ]
+        }
+    },
+    {
+        "query": "Drive from market to hotel stopping at tailor, spa, and juice bar avoiding detours.",
+        "structured": {
+            "start": "market",
+            "stops": [
+                "tailor",
+                "spa",
+                "juice bar"
+            ],
+            "end": "hotel",
+            "avoid": [
+                "detours"
+            ]
+        }
+    },
+    {
+        "query": "Route from school to festival ground with photography stop and avoid animal crossing zones.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "photo booth"
+            ],
+            "end": "festival ground",
+            "avoid": [
+                "animal_crossing"
+            ]
+        }
+    },
+    {
+        "query": "Drive from office to pier with food truck visit and park stop avoiding holiday traffic.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "food truck",
+                "park"
+            ],
+            "end": "pier",
+            "avoid": [
+                "holiday_traffic"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to temple from caf\u00e9 via grandma\u2019s house and clothing boutique avoiding high altitudes.",
+        "structured": {
+            "start": "caf\u00e9",
+            "stops": [
+                "grandma\u2019s house",
+                "clothing boutique"
+            ],
+            "end": "temple",
+            "avoid": [
+                "high_altitude"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route from coworking hub to city museum with music store visit and grocery drop avoiding hilly roads.",
+        "structured": {
+            "start": "coworking hub",
+            "stops": [
+                "music store",
+                "grocery store"
+            ],
+            "end": "city museum",
+            "avoid": [
+                "hills"
+            ]
+        }
+    },
+    {
+        "query": "Drive from college to beach house via pizza place and aunt\u2019s house and avoid toll booths.",
+        "structured": {
+            "start": "college",
+            "stops": [
+                "pizza place",
+                "aunt\u2019s house"
+            ],
+            "end": "beach house",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Take me from hostel to exhibition center with stops at Xerox center, caf\u00e9, and avoiding evening traffic.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "Xerox center",
+                "caf\u00e9"
+            ],
+            "end": "exhibition center",
+            "avoid": [
+                "evening traffic"
+            ]
+        }
+    },
+    {
+        "query": "Route me from apartment to wedding venue with stops at salon and bakery avoiding market closures.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "salon",
+                "bakery"
+            ],
+            "end": "wedding venue",
+            "avoid": [
+                "market closures"
+            ]
+        }
+    },
+    {
+        "query": "Drive from current location to eco park via nursery and herbal shop avoiding fuel-heavy routes.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "nursery",
+                "herbal shop"
+            ],
+            "end": "eco park",
+            "preference": "fuel_efficient"
+        }
+    },
+    {
+        "query": "Navigate to the central plaza with flower shop visit and jewelry pickup avoiding protest areas.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "flower shop",
+                "jewelry store"
+            ],
+            "end": "central plaza",
+            "avoid": [
+                "protest_areas"
+            ]
+        }
+    },
+    {
+        "query": "I need to go to the train station with a quick stop at a bookstore and then grab breakfast nearby.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bookstore",
+                "breakfast place"
+            ],
+            "end": "train station"
+        }
+    },
+    {
+        "query": "Drive me from office to home with stops at dry cleaner, fuel station, and bakery avoiding construction zones.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "dry cleaner",
+                "fuel station",
+                "bakery"
+            ],
+            "end": "home",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the music concert but I want to pick up my friend and stop at the coffee shop on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend\u2019s house",
+                "coffee shop"
+            ],
+            "end": "music concert"
+        }
+    },
+    {
+        "query": "Navigate to the college by 9 AM with a stop at the print shop, avoid accident-prone zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "print shop"
+            ],
+            "end": "college",
+            "arrive_by": "09:00",
+            "avoid": [
+                "accident_zones"
+            ]
+        }
+    },
+    {
+        "query": "Drive from home to dad\u2019s office stopping at the pet store and post office avoiding muddy roads.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "pet store",
+                "post office"
+            ],
+            "end": "dad\u2019s office",
+            "avoid": [
+                "muddy roads"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the beach with pickup from two friends and stop for ice cream, avoid tolls and highways.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend1",
+                "friend2",
+                "ice cream shop"
+            ],
+            "end": "beach",
+            "avoid": [
+                "tolls",
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Go from university to the park with a library visit and stop for a cold drink, avoid closed bridges.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "library",
+                "drink shop"
+            ],
+            "end": "park",
+            "avoid": [
+                "closed bridges"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from apartment to the clinic with a pharmacy pickup and arrive before 4 PM.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "pharmacy"
+            ],
+            "end": "clinic",
+            "arrive_by": "16:00"
+        }
+    },
+    {
+        "query": "I want to reach the campsite by sunset stopping at supermarket and gas station, avoid sharp curves.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "supermarket",
+                "gas station"
+            ],
+            "end": "campsite",
+            "arrive_by": "sunset",
+            "avoid": [
+                "sharp_curves"
+            ]
+        }
+    },
+    {
+        "query": "Drive from shopping mall to my cousin's house with stop at grocery store, avoid rainy roads.",
+        "structured": {
+            "start": "shopping mall",
+            "stops": [
+                "grocery store"
+            ],
+            "end": "cousin's house",
+            "avoid_weather": "rain"
+        }
+    },
+    {
+        "query": "I want to take my parents from home to temple and then visit relatives avoiding rush hour.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "temple"
+            ],
+            "end": "relatives' house",
+            "avoid": [
+                "rush_hour"
+            ]
+        }
+    },
+    {
+        "query": "Route from school to city stadium via fast food joint and gift shop, avoid school zones.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "fast food",
+                "gift shop"
+            ],
+            "end": "city stadium",
+            "avoid": [
+                "school_zones"
+            ]
+        }
+    },
+    {
+        "query": "Drive me to the fashion show after stopping at salon and boutique, avoid festival roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "salon",
+                "boutique"
+            ],
+            "end": "fashion show",
+            "avoid": [
+                "festival roads"
+            ]
+        }
+    },
+    {
+        "query": "Go from market to cousin\u2019s party via flower shop and dairy, avoiding one-way streets.",
+        "structured": {
+            "start": "market",
+            "stops": [
+                "flower shop",
+                "dairy"
+            ],
+            "end": "cousin\u2019s party",
+            "avoid": [
+                "one_way"
+            ]
+        }
+    },
+    {
+        "query": "Plan a ride to hiking spot with camping gear pickup and breakfast stop, avoid icy roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "camping gear shop",
+                "breakfast spot"
+            ],
+            "end": "hiking spot",
+            "avoid_weather": "icy"
+        }
+    },
+    {
+        "query": "I want to go from motel to art gallery stopping at ATM, food truck, and a street vendor avoiding tunnels.",
+        "structured": {
+            "start": "motel",
+            "stops": [
+                "ATM",
+                "food truck",
+                "street vendor"
+            ],
+            "end": "art gallery",
+            "avoid": [
+                "tunnels"
+            ]
+        }
+    },
+    {
+        "query": "Drive to job interview with pickup from hostel and tea stop before 8:45 AM avoiding construction.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "tea shop"
+            ],
+            "end": "interview venue",
+            "arrive_by": "08:45",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Take me from coworking space to doctor with detour to pick up reports and avoid muddy streets.",
+        "structured": {
+            "start": "coworking space",
+            "stops": [
+                "lab"
+            ],
+            "end": "doctor",
+            "avoid": [
+                "muddy streets"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to cousin's wedding with stop at tailor and avoid both highways and toll booths.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "tailor"
+            ],
+            "end": "wedding venue",
+            "avoid": [
+                "highways",
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Go from airport to friend's house via roadside diner and charging station for EV every 90 miles.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "roadside diner"
+            ],
+            "end": "friend's house",
+            "vehicle": "EV",
+            "charge_interval": 90
+        }
+    },
+    {
+        "query": "I want to visit the national park with two photography breaks and fuel every 150 miles avoiding construction zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "photo spot 1",
+                "photo spot 2"
+            ],
+            "end": "national park",
+            "vehicle": "car",
+            "charge_interval": 150,
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from home to voter center with stop at ID office and avoid all roadblocks.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "ID office"
+            ],
+            "end": "voter center",
+            "avoid": [
+                "roadblocks"
+            ]
+        }
+    },
+    {
+        "query": "Plan trip to shopping outlet with friends pickup, lunch break and avoid areas with flooding.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend 1",
+                "friend 2",
+                "lunch stop"
+            ],
+            "end": "shopping outlet",
+            "avoid_weather": "flooding"
+        }
+    },
+    {
+        "query": "Take me from hostel to blood donation camp with breakfast stop, avoid parade routes.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "breakfast"
+            ],
+            "end": "blood donation camp",
+            "avoid": [
+                "parade_routes"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the national library after picking friend from dorm and visiting art shop avoiding protest areas.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "dorm",
+                "art shop"
+            ],
+            "end": "national library",
+            "avoid": [
+                "protests"
+            ]
+        }
+    },
+    {
+        "query": "Plan a scenic drive from hills to seaside with two photo stops and refreshment break.",
+        "structured": {
+            "start": "hills",
+            "stops": [
+                "photo point 1",
+                "photo point 2",
+                "refreshment"
+            ],
+            "end": "seaside",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Navigate to the job fair via salon and tailor shop with arrival by 2 PM avoiding red zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "salon",
+                "tailor"
+            ],
+            "end": "job fair",
+            "arrive_by": "14:00",
+            "avoid": [
+                "red zones"
+            ]
+        }
+    },
+    {
+        "query": "I need to go to stadium via bookstore and dairy shop avoiding flooded routes.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bookstore",
+                "dairy shop"
+            ],
+            "end": "stadium",
+            "avoid_weather": "flooded"
+        }
+    },
+    {
+        "query": "Drive from university to railway station with coffee break and pickup friend, avoid long delays.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "coffee shop",
+                "friend\u2019s location"
+            ],
+            "end": "railway station",
+            "avoid": [
+                "delays"
+            ]
+        }
+    },
+    {
+        "query": "Go from work to library with a stop at bakery and pharmacy avoiding steep slopes.",
+        "structured": {
+            "start": "work",
+            "stops": [
+                "bakery",
+                "pharmacy"
+            ],
+            "end": "library",
+            "avoid": [
+                "steep_slopes"
+            ]
+        }
+    },
+    {
+        "query": "Take me from home to cultural event with parking availability nearby and stop at gift shop.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "gift shop"
+            ],
+            "end": "cultural event",
+            "search": "parking",
+            "location": "nearby"
+        }
+    },
+    {
+        "query": "Plan an early morning route to prayer hall with tea stop and pickup grandma avoiding city center.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "tea shop",
+                "grandma's house"
+            ],
+            "end": "prayer hall",
+            "avoid": [
+                "city center"
+            ]
+        }
+    },
+    {
+        "query": "Drive from cousin\u2019s place to registration office via printer shop and caf\u00e9 avoiding noise zones.",
+        "structured": {
+            "start": "cousin\u2019s place",
+            "stops": [
+                "printer shop",
+                "caf\u00e9"
+            ],
+            "end": "registration office",
+            "avoid": [
+                "noise zones"
+            ]
+        }
+    },
+    {
+        "query": "Go from motel to film studio with flower stop and avoid all high wind warnings.",
+        "structured": {
+            "start": "motel",
+            "stops": [
+                "florist"
+            ],
+            "end": "film studio",
+            "avoid_weather": "high_winds"
+        }
+    },
+    {
+        "query": "Navigate to beach party stopping at grocery, bakery and avoiding coastal flooding.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery",
+                "bakery"
+            ],
+            "end": "beach party",
+            "avoid_weather": "coastal_flooding"
+        }
+    },
+    {
+        "query": "Take me from hostel to exam center stopping at stationery and milk booth avoiding accident zones.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "stationery shop",
+                "milk booth"
+            ],
+            "end": "exam center",
+            "avoid": [
+                "accident zones"
+            ]
+        }
+    },
+    {
+        "query": "Drive from workshop to meditation retreat via restaurant and book shop, avoid roads under repair.",
+        "structured": {
+            "start": "workshop",
+            "stops": [
+                "restaurant",
+                "book shop"
+            ],
+            "end": "meditation retreat",
+            "avoid": [
+                "under repair"
+            ]
+        }
+    },
+    {
+        "query": "I want to visit airport lounge via post office and gift kiosk avoiding tight corners.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "post office",
+                "gift kiosk"
+            ],
+            "end": "airport lounge",
+            "avoid": [
+                "tight corners"
+            ]
+        }
+    },
+    {
+        "query": "Take me to sports meet via tea stall, locker shop and avoid traffic-prone junctions.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "tea stall",
+                "locker shop"
+            ],
+            "end": "sports meet",
+            "avoid": [
+                "traffic-prone areas"
+            ]
+        }
+    },
+    {
+        "query": "Route me from hostel to immigration office with urgent coffee stop and avoid bus routes.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "coffee shop"
+            ],
+            "end": "immigration office",
+            "avoid": [
+                "bus_routes"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from grandma\u2019s house to school with fuel refill and stop at uniform store avoiding bridges.",
+        "structured": {
+            "start": "grandma\u2019s house",
+            "stops": [
+                "fuel station",
+                "uniform store"
+            ],
+            "end": "school",
+            "avoid": [
+                "bridges"
+            ]
+        }
+    },
+    {
+        "query": "I want to visit orphanage with a stop at donation center and grocery avoiding any checkpoints.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "donation center",
+                "grocery"
+            ],
+            "end": "orphanage",
+            "avoid": [
+                "checkpoints"
+            ]
+        }
+    },
+    {
+        "query": "Take me from office to evening class with a charging stop every 80 miles and avoid city center.",
+        "structured": {
+            "start": "office",
+            "end": "evening class",
+            "vehicle": "EV",
+            "charge_interval": 80,
+            "avoid": [
+                "city center"
+            ]
+        }
+    },
+    {
+        "query": "Drive to celebration hall with photo stop and cake pickup avoiding slippery roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "photo stop",
+                "cake shop"
+            ],
+            "end": "celebration hall",
+            "avoid_weather": "slippery"
+        }
+    },
+    {
+        "query": "Pick me up from home, then stop by the pharmacy, grab coffee, and drop me at the dentist by 10:30 AM.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "pharmacy",
+                "coffee shop"
+            ],
+            "end": "dentist",
+            "arrive_by": "10:30"
+        }
+    },
+    {
+        "query": "Drive to the movie theater with a stop at the mall and ice cream shop, avoid heavy traffic.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "mall",
+                "ice cream shop"
+            ],
+            "end": "movie theater",
+            "avoid": [
+                "traffic"
+            ]
+        }
+    },
+    {
+        "query": "Plan a road trip from Chicago to Denver with stops at Kansas City and Colorado Springs, prefer scenic routes.",
+        "structured": {
+            "start": "Chicago",
+            "stops": [
+                "Kansas City",
+                "Colorado Springs"
+            ],
+            "end": "Denver",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me from work to the airport with a stop at home to grab my luggage, avoid toll roads.",
+        "structured": {
+            "start": "work",
+            "stops": [
+                "home"
+            ],
+            "end": "airport",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to the university after visiting the registrar office and bookshop, reach before 9 AM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "registrar office",
+                "bookshop"
+            ],
+            "end": "university",
+            "arrive_by": "09:00"
+        }
+    },
+    {
+        "query": "Plan a route from Dallas to Houston with a charging stop every 120 miles and avoid construction.",
+        "structured": {
+            "start": "Dallas",
+            "end": "Houston",
+            "vehicle": "EV",
+            "charge_interval": 120,
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the beach with stops at a gas station, grocery store, and burger joint, prefer fastest route.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "gas station",
+                "grocery store",
+                "burger joint"
+            ],
+            "end": "beach",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "I need to get to the airport after picking up my sister and dropping off documents at her office.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "sister's place",
+                "her office"
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Get me to the hospital with a pharmacy stop on the way and avoid traffic lights.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pharmacy"
+            ],
+            "end": "hospital",
+            "avoid": [
+                "traffic_lights"
+            ]
+        }
+    },
+    {
+        "query": "Drive to grandma\u2019s house with a bakery stop and avoid steep roads and sharp curves.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bakery"
+            ],
+            "end": "grandma\u2019s house",
+            "avoid": [
+                "steep roads",
+                "sharp curves"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the train station with a stop at a luggage shop and a breakfast cafe.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "luggage shop",
+                "breakfast cafe"
+            ],
+            "end": "train station"
+        }
+    },
+    {
+        "query": "Drive from UTA to downtown with a flower shop visit and arrive by 5 PM avoiding police checkpoints.",
+        "structured": {
+            "start": "UTA",
+            "stops": [
+                "flower shop"
+            ],
+            "end": "downtown",
+            "arrive_by": "17:00",
+            "avoid": [
+                "checkpoints"
+            ]
+        }
+    },
+    {
+        "query": "Plan a trip from hotel to amusement park with lunch stop and gas refill, avoid closed roads.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "lunch stop",
+                "gas station"
+            ],
+            "end": "amusement park",
+            "avoid": [
+                "closed roads"
+            ]
+        }
+    },
+    {
+        "query": "I want to go from the hostel to the conference center with breakfast and ID pickup stops.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "breakfast place",
+                "ID center"
+            ],
+            "end": "conference center"
+        }
+    },
+    {
+        "query": "Go to the music festival stopping at a costume shop and fuel station, avoid flooding areas.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "costume shop",
+                "fuel station"
+            ],
+            "end": "music festival",
+            "avoid_weather": "flooding"
+        }
+    },
+    {
+        "query": "Plan a drive to the border office with a lawyer pickup and breakfast break, avoid narrow streets.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "lawyer's office",
+                "breakfast spot"
+            ],
+            "end": "border office",
+            "avoid": [
+                "narrow streets"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to the picnic spot via grocery store and gas station, avoid busy intersections.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery store",
+                "gas station"
+            ],
+            "end": "picnic spot",
+            "avoid": [
+                "intersections"
+            ]
+        }
+    },
+    {
+        "query": "Drive from school to museum with two photo stops and a snack break, prefer scenic views.",
+        "structured": {
+            "start": "school",
+            "stops": [
+                "photo point 1",
+                "photo point 2",
+                "snack shop"
+            ],
+            "end": "museum",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me to the zoo after picking up kids from school and visiting bakery.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "school",
+                "bakery"
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "Drive to my uncle\u2019s house after collecting books from the library and a short park visit.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "library",
+                "park"
+            ],
+            "end": "uncle\u2019s house"
+        }
+    },
+    {
+        "query": "Go from hotel to lake house stopping at a bakery, market, and fuel station avoiding heavy trucks.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "bakery",
+                "market",
+                "fuel station"
+            ],
+            "end": "lake house",
+            "avoid": [
+                "heavy trucks"
+            ]
+        }
+    },
+    {
+        "query": "Plan a visit to the vineyard with a scenic stop and a wine store visit on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "scenic spot",
+                "wine store"
+            ],
+            "end": "vineyard",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me to the courthouse with a lawyer pickup and file drop at city hall, avoid underpasses.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "lawyer's office",
+                "city hall"
+            ],
+            "end": "courthouse",
+            "avoid": [
+                "underpasses"
+            ]
+        }
+    },
+    {
+        "query": "Drive from office to workshop with lunch break, prefer fuel-efficient route.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "lunch place"
+            ],
+            "end": "workshop",
+            "preference": "fuel_efficient"
+        }
+    },
+    {
+        "query": "Navigate from hostel to cinema via pizza place and coffee shop, avoid loud zones.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "pizza place",
+                "coffee shop"
+            ],
+            "end": "cinema",
+            "avoid": [
+                "noise zones"
+            ]
+        }
+    },
+    {
+        "query": "Go to the city library after attending a seminar and grabbing lunch near campus.",
+        "structured": {
+            "start": "seminar venue",
+            "stops": [
+                "lunch spot"
+            ],
+            "end": "city library"
+        }
+    },
+    {
+        "query": "Drive to the office via friend\u2019s house and park avoiding icy patches.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend's house",
+                "park"
+            ],
+            "end": "office",
+            "avoid_weather": "ice"
+        }
+    },
+    {
+        "query": "Plan a family outing to botanical gardens with snack break and EV charging every 80 miles.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "snack place"
+            ],
+            "end": "botanical gardens",
+            "vehicle": "EV",
+            "charge_interval": 80
+        }
+    },
+    {
+        "query": "Route me to the police station via lawyer\u2019s office and cafe, avoid diversions.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "lawyer\u2019s office",
+                "cafe"
+            ],
+            "end": "police station",
+            "avoid": [
+                "diversions"
+            ]
+        }
+    },
+    {
+        "query": "Take me to my school friend\u2019s wedding stopping for gift shopping and suit pickup.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "gift shop",
+                "suit shop"
+            ],
+            "end": "wedding hall"
+        }
+    },
+    {
+        "query": "Drive from gym to bookstore then to a vegan caf\u00e9 and finally back home.",
+        "structured": {
+            "start": "gym",
+            "stops": [
+                "bookstore",
+                "vegan caf\u00e9"
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Navigate to the science fair with supply pickup and breakfast break avoiding student rallies.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "supply store",
+                "breakfast place"
+            ],
+            "end": "science fair",
+            "avoid": [
+                "rallies"
+            ]
+        }
+    },
+    {
+        "query": "Plan a road trip to Yellowstone National Park with photo breaks and an overnight hotel stop.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "photo spot 1",
+                "overnight hotel"
+            ],
+            "end": "Yellowstone"
+        }
+    },
+    {
+        "query": "Drive from mall to cousin\u2019s baby shower with gift shopping and ice cream stop.",
+        "structured": {
+            "start": "mall",
+            "stops": [
+                "gift shop",
+                "ice cream shop"
+            ],
+            "end": "baby shower"
+        }
+    },
+    {
+        "query": "Take me to the mechanic via parts store and car wash avoiding steep inclines.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "parts store",
+                "car wash"
+            ],
+            "end": "mechanic",
+            "avoid": [
+                "steep inclines"
+            ]
+        }
+    },
+    {
+        "query": "Go from hotel to nature reserve with water bottle refill and quick picnic stop.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "refill station",
+                "picnic site"
+            ],
+            "end": "nature reserve"
+        }
+    },
+    {
+        "query": "Drive to the bus station after stopping at the post office and public restroom avoiding bumpy roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "post office",
+                "restroom"
+            ],
+            "end": "bus station",
+            "avoid": [
+                "bumpy roads"
+            ]
+        }
+    },
+    {
+        "query": "I want to visit a friend, stop by the electronics store, and drop my laundry off on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "electronics store",
+                "laundry"
+            ],
+            "end": "friend's house"
+        }
+    },
+    {
+        "query": "Drive from university to the immigration office stopping at a bank and print shop avoiding border closures.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "bank",
+                "print shop"
+            ],
+            "end": "immigration office",
+            "avoid": [
+                "border closures"
+            ]
+        }
+    },
+    {
+        "query": "Plan a night drive from downtown to the airport with a coffee break and toll-free route.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                "coffee shop"
+            ],
+            "end": "airport",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Take me from home to the art gallery with a stop at the bakery and avoid heavy traffic.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "bakery"
+            ],
+            "end": "art gallery",
+            "avoid": [
+                "traffic"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the wedding venue with a stop at the florist and avoid construction zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "florist"
+            ],
+            "end": "wedding venue",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to the conference center with a stop at the coffee shop and arrive by 3 PM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "coffee shop"
+            ],
+            "end": "conference center",
+            "arrive_by": "15:00"
+        }
+    },
+    {
+        "query": "I want to go from home to the gym with a stop at the grocery store and avoid busy roads.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "grocery store"
+            ],
+            "end": "gym",
+            "avoid": [
+                "busy roads"
+            ]
+        }
+    },
+    {
+        "query": "Drive from work to the airport with a stop at the dry cleaner and avoid toll roads.",
+        "structured": {
+            "start": "work",
+            "stops": [
+                "dry cleaner"
+            ],
+            "end": "airport",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route from home to the beach with stops at a gas station and grocery store, prefer scenic views.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "gas station",
+                "grocery store"
+            ],
+            "end": "beach",
+            "preference": [
+                "scenic"
+            ]
+        }
+    },
+    {
+        "query": "I need to go from home to my friend's house, stopping at the grocery store and bakery on the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "grocery store",
+                "bakery"
+            ],
+            "end": "friend's house"
+        }
+    },
+    {
+        "query": "Plan a route from my house to the amusement park with stops at a coffee shop and a bookstore, avoiding traffic jams.",
+        "structured": {
+            "start": "my house",
+            "stops": [
+                "coffee shop",
+                "bookstore"
+            ],
+            "end": "amusement park",
+            "avoid": [
+                "traffic_jams"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the train station with a stop at the bakery and a quick visit to the pharmacy, avoiding toll roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bakery",
+                "pharmacy"
+            ],
+            "end": "train station",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "Drive from the university to the library with a stop at the grocery store and avoid construction zones.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "grocery store"
+            ],
+            "end": "library",
+            "avoid": [
+                "construction zones"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to the park with a stop at the florist and a coffee shop, avoiding busy intersections.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "florist",
+                "coffee shop"
+            ],
+            "end": "park",
+            "avoid": [
+                "busy intersections"
+            ]
+        }
+    },
+    {
+        "query": "Plan a scenic drive from the city center to the mountains with a stop at a vineyard and a picnic area.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                "vineyard",
+                "picnic area"
+            ],
+            "end": "mountains",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me to the hospital with a stop at the pharmacy and avoid roads with heavy traffic.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pharmacy"
+            ],
+            "end": "hospital",
+            "avoid": [
+                "heavy traffic"
+            ]
+        }
+    },
+    {
+        "query": "Drive from the airport to the hotel with a stop at a restaurant and a gas station, avoiding toll roads.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "restaurant",
+                "gas station"
+            ],
+            "end": "hotel",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route from my house to the zoo with stops at a bakery and a park, avoiding highways.",
+        "structured": {
+            "start": "my house",
+            "stops": [
+                "bakery",
+                "park"
+            ],
+            "end": "zoo",
+            "avoid": [
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the shopping mall with a stop at the electronics store and a quick visit to the food court.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "electronics store",
+                "food court"
+            ],
+            "end": "shopping mall"
+        }
+    },
+    {
+        "query": "Drive to the beach with a stop at the gas station and a convenience store, avoiding steep roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "gas station",
+                "convenience store"
+            ],
+            "end": "beach",
+            "avoid": [
+                "steep roads"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to the museum with a stop at the bookstore and a coffee shop, avoiding narrow streets.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bookstore",
+                "coffee shop"
+            ],
+            "end": "museum",
+            "avoid": [
+                "narrow streets"
+            ]
+        }
+    },
+    {
+        "query": "Drive from home to university with a breakfast stop and reach by 8:30 AM, avoid highways.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "breakfast place"
+            ],
+            "end": "university",
+            "arrive_by": "08:30",
+            "avoid": [
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the stadium via friend\u2019s house and sports shop, reach before 6 PM avoiding construction.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend\u2019s house",
+                "sports shop"
+            ],
+            "end": "stadium",
+            "arrive_by": "18:00",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Plan a scenic drive to the mountains with a camping gear pickup and lunch break.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "camping gear shop",
+                "lunch spot"
+            ],
+            "end": "mountains",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Go to the visa office after printing documents and grabbing coffee, prefer fastest route.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "print shop",
+                "coffee shop"
+            ],
+            "end": "visa office",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Drive to the beach house with grocery and pharmacy stops, avoid tolls and highways.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery store",
+                "pharmacy"
+            ],
+            "end": "beach house",
+            "avoid": [
+                "tolls",
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Navigate to aunt\u2019s home via school pickup and cake shop, reach before 4 PM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "school",
+                "cake shop"
+            ],
+            "end": "aunt\u2019s home",
+            "arrive_by": "16:00"
+        }
+    },
+    {
+        "query": "Plan a drive from the office to the hotel stopping at dry cleaners and bakery.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "dry cleaners",
+                "bakery"
+            ],
+            "end": "hotel"
+        }
+    },
+    {
+        "query": "Take me to the pet clinic via pet store and avoid school zones and traffic lights.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pet store"
+            ],
+            "end": "pet clinic",
+            "avoid": [
+                "school zones",
+                "traffic_lights"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the train station after dropping kids at school and picking up suitcase from home.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "school",
+                "home"
+            ],
+            "end": "train station"
+        }
+    },
+    {
+        "query": "Route to the airport with EV charging every 90 miles and avoid roads with accidents.",
+        "structured": {
+            "start": "current_location",
+            "end": "airport",
+            "vehicle": "EV",
+            "charge_interval": 90,
+            "avoid": [
+                "accidents"
+            ]
+        }
+    },
+    {
+        "query": "Plan a weekend trip to the lake via fishing store and rest stop, prefer less busy roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "fishing store",
+                "rest stop"
+            ],
+            "end": "lake",
+            "preference": "less_busy"
+        }
+    },
+    {
+        "query": "Go from university to the embassy with a document pickup stop at my apartment.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "apartment"
+            ],
+            "end": "embassy"
+        }
+    },
+    {
+        "query": "Drive to a business meeting via suit tailor and avoid speed bumps.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "suit tailor"
+            ],
+            "end": "business meeting location",
+            "avoid": [
+                "speed bumps"
+            ]
+        }
+    },
+    {
+        "query": "Take me to my cousin\u2019s house stopping at the grocery store and mobile repair shop.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery store",
+                "mobile repair shop"
+            ],
+            "end": "cousin's house"
+        }
+    },
+    {
+        "query": "Navigate from airport to hotel with a late-night food stop, avoid areas with crime reports.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "food place"
+            ],
+            "end": "hotel",
+            "avoid": [
+                "high_crime_areas"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route to the shopping mall via ATM and florist, avoid roadblocks and protests.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "ATM",
+                "florist"
+            ],
+            "end": "shopping mall",
+            "avoid": [
+                "roadblocks",
+                "protests"
+            ]
+        }
+    },
+    {
+        "query": "Drive to a friend\u2019s wedding with a stop at the tailor and the invitation pickup office.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "tailor",
+                "invitation office"
+            ],
+            "end": "wedding venue"
+        }
+    },
+    {
+        "query": "Go to the vaccination center after visiting clinic and grabbing lunch, avoid school traffic.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "clinic",
+                "lunch spot"
+            ],
+            "end": "vaccination center",
+            "avoid": [
+                "school traffic"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the fairgrounds with a pickup from my friend's place and avoid rough terrain.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "friend\u2019s house"
+            ],
+            "end": "fairgrounds",
+            "avoid": [
+                "rough terrain"
+            ]
+        }
+    },
+    {
+        "query": "Drive to the university dorms with a detour for new bedding and water bottles.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bedding store",
+                "grocery store"
+            ],
+            "end": "university dorms"
+        }
+    }
+]

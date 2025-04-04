@@ -1,0 +1,4032 @@
+[
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Convention Center that has elevators and is located near a DART Rail station.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Convention Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": [
+                "elevator"
+            ],
+            "proximity": "near DART Rail station"
+        }
+    },
+    {
+        "query": "Drive me from my home in The Colony to a specific escape room venue in Plano (Legacy Drive) and then to a board game cafe that serves food near my home.",
+        "structured": {
+            "start": "home",
+            "city": "The Colony",
+            "stops": [
+                {
+                    "poi": "escape room venue",
+                    "street": "Legacy Drive",
+                    "city": "Plano"
+                },
+                {
+                    "search": "board game cafe",
+                    "constraints": {
+                        "serves food": true
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "board game cafe",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route through the Lakeside Park in Highland Park, Dallas, starting and ending at the Lakeside Park Fountain and highlighting the statues and the views of Turtle Creek.",
+        "structured": {
+            "start": "Lakeside Park Fountain",
+            "proximity": "Highland Park, Dallas",
+            "end": "Lakeside Park Fountain",
+            "travel_mode": "walking",
+            "route_type": "tour",
+            "area": "Lakeside Park, Highland Park, Dallas",
+            "show_along_route": [
+                "statues",
+                "views of Turtle Creek"
+            ],
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a compounding pharmacy that also sells durable medical equipment near Medical City Dallas, avoiding Coit Road due to construction.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Dallas",
+            "end": "compounding pharmacy",
+            "constraints": {
+                "sells": "durable medical equipment"
+            },
+            "proximity": "Medical City Dallas",
+            "travel_mode": "driving",
+            "avoid": [
+                "Coit Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest art studio that offers drop-in painting sessions and has good lighting for photography, and then to my photography studio.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "art studio",
+                    "location": "nearest",
+                    "constraints": {
+                        "offers": "drop-in painting sessions",
+                        "good lighting for": "photography"
+                    }
+                }
+            ],
+            "end": "my photography studio",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake, finding a route that is mostly unpaved and offers views of the lake.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly unpaved",
+            "show_along_route": [
+                {
+                    "search": "views of the lake"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any food truck rallies scheduled for the upcoming weekend.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "food truck rallies scheduled for the upcoming weekend"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the West Village of Dallas to a tea house that serves afternoon tea and has a quiet atmosphere for reading.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "West Village, Dallas",
+            "end": "tea house",
+            "travel_mode": "walking",
+            "constraints": {
+                "serves": "afternoon tea",
+                "atmosphere": "quiet for reading"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific music venue in McKinney (Virginia Parkway) and then to a late-night bookstore near my home that is open past midnight.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "music venue",
+                    "street": "Virginia Parkway",
+                    "city": "McKinney"
+                },
+                {
+                    "search": "late-night bookstore",
+                    "constraints": {
+                        "open past": "00:00"
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "late-night bookstore",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest vehicle inspection station that is open on Saturdays.",
+        "structured": {
+            "start": "current_location",
+            "end": "vehicle inspection station",
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest",
+            "constraints": {
+                "open on": "Saturday"
+            }
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Denton to the Wichita Mountains Wildlife Refuge in Oklahoma, including a stop at a visitor center with information about the local flora and fauna.",
+        "structured": {
+            "start": "home",
+            "city": "Denton",
+            "end": "Wichita Mountains Wildlife Refuge",
+            "proximity": "Oklahoma",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "visitor center",
+                    "constraints": {
+                        "information about": [
+                            "local flora",
+                            "fauna"
+                        ]
+                    },
+                    "location_preference": "within the refuge"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Kimbell Art Foundation Piano Pavilion in Fort Worth to the Modern Art Museum of Fort Worth, and find out if they have any film screenings scheduled for the upcoming week.",
+        "structured": {
+            "start": "Kimbell Art Foundation Piano Pavilion",
+            "city": "Fort Worth",
+            "end": "Modern Art Museum of Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "film screenings scheduled for the upcoming week"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Clear Creek Natural Heritage Center, using a route that is mostly flat and has benches available for resting.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Clear Creek Natural Heritage Center",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "bench"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any special events for members scheduled for this weekend.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events for members scheduled for this weekend"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Heritage Village at Old City Park that is accessible by both bus and light rail.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Heritage Village at Old City Park",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": [
+                "bus",
+                "light rail"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific playground in Frisco (Hope Park) and then to a coffee shop with outdoor seating that allows dogs near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "playground",
+                    "name": "Hope Park",
+                    "city": "Frisco"
+                },
+                {
+                    "search": "coffee shop with outdoor seating",
+                    "constraints": {
+                        "allows dogs": true
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "coffee shop",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Dog Park and highlighting the trails along the eastern shore.",
+        "structured": {
+            "start": "White Rock Lake Dog Park",
+            "city": "Dallas",
+            "end": "White Rock Lake Dog Park",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "trails along the eastern shore"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a medical equipment rental store near Medical City Plano, avoiding Parker Road due to road work.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "medical equipment rental store",
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Parker Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest music store that buys used instruments and offers instrument repair services, and then to my band practice location.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "music store",
+                    "location": "nearest",
+                    "constraints": {
+                        "buys used instruments": true,
+                        "offers instrument repair services": true
+                    }
+                }
+            ],
+            "end": "my band practice location",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Airfield Falls Conservation Park, finding a route that is mostly paved and has shaded picnic areas.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Airfield Falls Conservation Park",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "shaded picnic area"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the George W. Bush Presidential Center, and check if they have any temporary art exhibitions currently on display.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "George W. Bush Presidential Center",
+            "travel_mode": "driving",
+            "request_info": [
+                "temporary art exhibitions currently on display"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a restaurant with a patio that has misters and serves farm-to-table cuisine.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "restaurant",
+            "travel_mode": "walking",
+            "constraints": {
+                "patio with misters": true,
+                "cuisine": "farm-to-table"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bookstore with a large children's section in Frisco (Preston Road) and then to a park with a splash pad near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bookstore",
+                    "street": "Preston Road",
+                    "city": "Frisco",
+                    "constraints": {
+                        "large children's section": true
+                    }
+                },
+                {
+                    "search": "park with a splash pad",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest urgent care center that offers pediatric services.",
+        "structured": {
+            "start": "current_location",
+            "end": "urgent care center",
+            "constraints": {
+                "offers": "pediatric services"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a historical marker related to the Chisholm Trail.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "historical marker",
+                    "constraints": {
+                        "related to": "Chisholm Trail"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any docent-led tours available today.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "docent-led tours available today"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly shaded and has water fountains along the way.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly shaded",
+            "show_along_route": [
+                {
+                    "search": "water fountain"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any behind-the-scenes tours specifically for reptiles.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "behind-the-scenes tours specifically for reptiles"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is accessible by elevator and escalator and has weekend service.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": [
+                "elevator",
+                "escalator"
+            ],
+            "constraints": {
+                "weekend service": true
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific mini golf course in Frisco (Main Street) and then to a frozen yogurt shop with sugar-free options near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "mini golf course",
+                    "street": "Main Street",
+                    "city": "Frisco"
+                },
+                {
+                    "search": "frozen yogurt shop",
+                    "constraints": {
+                        "sugar-free options": true
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "frozen yogurt shop",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Museum and highlighting the historic structures and the spillway.",
+        "structured": {
+            "start": "White Rock Lake Museum",
+            "city": "Dallas",
+            "end": "White Rock Lake Museum",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "historic structures",
+                "the spillway"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a medical supply store that specializes in pediatric equipment near Children's Medical Center Plano, avoiding Legacy Drive due to traffic.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "medical supply store",
+            "constraints": {
+                "specializes in": "pediatric equipment"
+            },
+            "proximity": "Children's Medical Center Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Legacy Drive"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest comic book store that also sells vintage toys and offers a subscription service, and then to my friend's house.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "comic book store",
+                    "location": "nearest",
+                    "constraints": {
+                        "sells": "vintage toys",
+                        "offers": "subscription service"
+                    }
+                }
+            ],
+            "end": "my friend's house",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Z Bonz Dog Park, finding a route that is mostly paved and has dog water fountains available.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Z Bonz Dog Park",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "dog water fountain"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Dallas World Aquarium, and check if they have any behind-the-scenes tours specifically for marine life.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Dallas World Aquarium",
+            "travel_mode": "driving",
+            "request_info": [
+                "behind-the-scenes tours specifically for marine life"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the West Village of Dallas to a cafe that serves fair-trade coffee and has outdoor seating with shade.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "West Village, Dallas",
+            "end": "cafe",
+            "travel_mode": "walking",
+            "constraints": {
+                "serves": "fair-trade coffee",
+                "outdoor seating with": "shade"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific record store with a wide selection of indie music in Plano (Central Expressway) and then to a venue that hosts trivia nights near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "record store",
+                    "street": "Central Expressway",
+                    "city": "Plano",
+                    "constraints": {
+                        "wide selection of": "indie music"
+                    }
+                },
+                {
+                    "search": "venue",
+                    "constraints": {
+                        "hosts": "trivia nights"
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "venue",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest public library that has a dedicated genealogy research section.",
+        "structured": {
+            "start": "current_location",
+            "end": "public library",
+            "constraints": {
+                "has dedicated": "genealogy research section"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local antique shop specializing in vintage maps.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local antique shop",
+                    "constraints": {
+                        "specializing in": "vintage maps"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any family art workshops scheduled for the upcoming month.",
+        "structured": {
+            "start": "Amon Carter Museumof American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "family art workshops scheduled for the upcoming month"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly on natural surface trails suitable for hiking and biking.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly on natural surface trails suitable for hiking and biking"
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Sundance Square, and check if there are any outdoor movie screenings scheduled for this weekend.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Sundance Square",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor movie screenings scheduled for this weekend"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Convention Center that is accessible by wheelchair and has real-time arrival information available.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Convention Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "request_info": [
+                "real-time arrival information available"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my home in The Colony to a specific pottery studio in Plano (Parker Road) and then to a craft store with a wide selection of yarn near my home.",
+        "structured": {
+            "start": "home",
+            "city": "The Colony",
+            "stops": [
+                {
+                    "poi": "pottery studio",
+                    "street": "Parker Road",
+                    "city": "Plano"
+                },
+                {
+                    "search": "craft store",
+                    "constraints": {
+                        "wide selection of": "yarn"
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "craft store",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route through the Fair Park in Dallas, starting and ending at the Texas Discovery Gardens and highlighting the art deco architecture and the Esplanade.",
+        "structured": {
+            "start": "Texas Discovery Gardens",
+            "city": "Dallas",
+            "end": "Texas Discovery Gardens",
+            "travel_mode": "walking",
+            "route_type": "tour",
+            "area": "Fair Park, Dallas",
+            "show_along_route": [
+                "art deco architecture",
+                "the Esplanade"
+            ],
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Medical City Dallas Hospital to a rehabilitation center specializing in stroke recovery near Baylor Scott & White Medical Center \u2013 White Rock, avoiding Northwest Highway due to construction.",
+        "structured": {
+            "start": "Medical City Dallas Hospital",
+            "city": "Dallas",
+            "end": "rehabilitation center",
+            "constraints": {
+                "specializing in": "stroke recovery"
+            },
+            "proximity": "Baylor Scott & White Medical Center \u2013 White Rock, Dallas",
+            "travel_mode": "driving",
+            "avoid": [
+                "Northwest Highway"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest bookstore that has a cafe with outdoor seating and hosts author events, and then to my book club meeting location.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "has cafe with outdoor seating": true,
+                        "hosts": "author events"
+                    }
+                }
+            ],
+            "end": "my book club meeting location",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the River Legacy Parks, finding a route that is mostly paved and has bike repair stations available.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "River Legacy Parks",
+            "city": "Arlington",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "bike repair station"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any free public yoga classes scheduled for this week.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "free public yoga classes scheduled for this week"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a restaurant with a patio that has a fireplace and serves contemporary American cuisine with vegan options.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "restaurant",
+            "travel_mode": "walking",
+            "constraints": {
+                "patio with fireplace": true,
+                "cuisine": "contemporary American",
+                "vegan options": true
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific toy store with a large selection of educational toys in Frisco (Preston Road) and then to a park with a nature trail near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "toy store",
+                    "street": "Preston Road",
+                    "city": "Frisco",
+                    "constraints": {
+                        "large selection of": "educational toys"
+                    }
+                },
+                {
+                    "search": "park with a nature trail",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that issues replacement social security cards.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "issues": "replacement social security cards"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a museum dedicated to local history.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "museum dedicated to local history",
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibitions focused on photography.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibitions focused on photography"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has scenic overlooks of the river.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "scenic overlook of the river"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any conservation talks scheduled for this month.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "conservation talks scheduled for this month"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is accessible by scooter and has weekday service before 8 AM.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "scooter",
+            "constraints": {
+                "weekday service before": "08:00"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bookstore with a good selection of science fiction in Frisco (Preston Road) and then to a cafe with board games available to play near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bookstore",
+                    "street": "Preston Road",
+                    "city": "Frisco",
+                    "constraints": {
+                        "good selection of": "science fiction"
+                    }
+                },
+                {
+                    "search": "cafe with board games",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "cafe",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Park and highlighting the Bath House Cultural Arts Center and the Dreyfuss Club.",
+        "structured": {
+            "start": "White Rock Lake Park",
+            "city": "Dallas",
+            "end": "White Rock Lake Park",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Bath House Cultural Arts Center",
+                "the Dreyfuss Club"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a pharmacy that specializes in pediatric medications near Children's Medical Center Plano, avoiding Alma Drive due to road closures.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "pharmacy",
+            "constraints": {
+                "specializes in": "pediatric medications"
+            },
+            "proximity": "Children's Medical Center Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Alma Drive"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent coffee shop that roasts their own beans and has a loyalty program, and then to my co-working space.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent coffee shop",
+                    "location": "nearest",
+                    "constraints": {
+                        "roasts their own beans": true,
+                        "has": "loyalty program"
+                    }
+                }
+            ],
+            "end": "my co-working space",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Dam, finding a route that is mostly paved and offers views of the river and the lake.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Dam",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "views of the river and the lake"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor concerts featuring local artists scheduled for this month.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor concerts featuring local artists scheduled for this month"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a restaurant with a rooftop patio that has heaters and serves modern Mexican cuisine with vegetarian options.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "restaurant",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with heaters": true,
+                "cuisine": "modern Mexican",
+                "vegetarian options": true
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific used bookstore with a good selection of history books in Frisco (Preston Road) and then to a cafe with a fireplace near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "used bookstore",
+                    "street": "Preston Road",
+                    "city": "Frisco",
+                    "constraints": {
+                        "good selection of": "history books"
+                    }
+                },
+                {
+                    "search": "cafe with a fireplace",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "cafe",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest tax preparation service that is open on weekends during tax season.",
+        "structured": {
+            "start": "current_location",
+            "end": "tax preparation service",
+            "constraints": {
+                "open on": "weekends",
+                "during": "tax season"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local winery that offers vineyard tours.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local winery",
+                    "constraints": {
+                        "offers": "vineyard tours"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibitions focused on sculpture.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibitions focused on sculpture"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has workout stations along the trail.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "workout station"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any early opening hours for members.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "early opening hours for members"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has bus and train connections.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "connections": [
+                    "bus",
+                    "train"
+                ]
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific ice cream parlor with homemade flavors in Frisco (Main Street) and then to a park with a fishing pond near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "ice cream parlor",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "homemade flavors": true
+                    }
+                },
+                {
+                    "search": "park with a fishing pond",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Spillway and highlighting the Stone Tables and the Filter Building.",
+        "structured": {
+            "start": "White Rock Lake Spillway",
+            "city": "Dallas",
+            "end": "White Rock Lake Spillway",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "the Filter Building"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in sports medicine near Medical City Plano, avoiding Preston Road during evening rush hour.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "sports medicine"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ],
+            "time_context": "evening rush hour"
+        }
+    },
+    {
+        "query": "Take me to the nearest laundromat that offers wash-and-fold service and has free Wi-Fi, and then to my apartment.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "laundromat",
+                    "location": "nearest",
+                    "constraints": {
+                        "offers": "wash-and-fold service",
+                        "has": "free Wi-Fi"
+                    }
+                }
+            ],
+            "end": "my apartment",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has bike racks available.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "bike rack"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor movie nights scheduled for the summer.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor movie nights scheduled for the summer"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a patio that allows dogs and has outdoor games.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "patio": true,
+                "allows dogs": true,
+                "has": "outdoor games"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its custom cakes in Frisco (Main Street) and then to a party supply store near my home with a wide selection of balloons.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "custom cakes"
+                    }
+                },
+                {
+                    "search": "party supply store",
+                    "constraints": {
+                        "wide selection of": "balloons"
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "party supply store",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest passport application acceptance facility that offers appointment scheduling online.",
+        "structured": {
+            "start": "current_location",
+            "end": "passport application acceptance facility",
+            "constraints": {
+                "offers appointment scheduling": "online"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local brewery with a view of Lake Texoma.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local brewery",
+                    "constraints": {
+                        "view of": "Lake Texoma"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any lectures focused on American Western art.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "lectures focused on American Western art"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has bird watching opportunities.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "bird watching opportunities"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any discounts available for seniors.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "discounts available for seniors"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has late-night service on Fridays.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "late-night service on": "Friday"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific donut shop with unique flavors in Frisco (Main Street) and then to a park with a disc golf course near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "donut shop",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "unique flavors": true
+                    }
+                },
+                {
+                    "search": "park with a disc golf course",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Boat House and highlighting the Winfrey Point and the Sunset Bay.",
+        "structured": {
+            "start": "White Rock Lake Boat House",
+            "city": "Dallas",
+            "end": "White Rock Lake Boat House",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Winfrey Point",
+                "the Sunset Bay"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a medical supply store that rents wheelchairs near Medical City Plano, avoiding Independence Parkway due to traffic signals.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "medical supply store",
+            "constraints": {
+                "rents": "wheelchairs"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Independence Parkway"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest plant nursery that specializes in native Texas plants and offers landscaping services, and then to my garden.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "plant nursery",
+                    "location": "nearest",
+                    "constraints": {
+                        "specializes in": "native Texas plants",
+                        "offers": "landscaping services"
+                    }
+                }
+            ],
+            "end": "my garden",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Lake Worth Nature Center, finding a route that is mostly unpaved and offers wildlife viewing opportunities.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Lake Worth Nature Center",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly unpaved",
+            "show_along_route": [
+                {
+                    "search": "wildlife viewing opportunities"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any live music performances featuring classical music scheduled for this month.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "live music performances featuring classical music scheduled for this month"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a patio that has fans and serves craft cocktails.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "patio with fans": true,
+                "serves": "craft cocktails"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its vegan pastries in Frisco (Main Street) and then to a park with a sand volleyball court near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "vegan pastries"
+                    }
+                },
+                {
+                    "search": "park with a sand volleyball court",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that provides assistance with disability claims.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "provides assistance with": "disability claims"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local historical society museum.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local historical society museum",
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any workshops for children focused on art appreciation.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "workshops for children focused on art appreciation"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has exercise equipment along the trail.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "exercise equipment"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any special events scheduled for Earth Day.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events scheduled for Earth Day"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has limited-stop express service available.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "limited-stop express service": true
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific coffee shop with a drive-thru in Frisco (Preston Road) and then to a park with a jogging trail near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "coffee shop with a drive-thru",
+                    "street": "Preston Road",
+                    "city": "Frisco"
+                },
+                {
+                    "search": "park with a jogging trail",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Dam and highlighting the T.P. Taggart Memorial and the Stone Tables.",
+        "structured": {
+            "start": "White Rock Lake Dam",
+            "city": "Dallas",
+            "end": "White Rock Lake Dam",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "T.P. Taggart Memorial",
+                "the Stone Tables"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in hand therapy near Medical City Plano, avoiding Ohio Drive due to construction.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "hand therapy"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Ohio Drive"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest bakery that specializes in sourdough bread and offers online ordering, and then to my friend's house for dinner.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "nearest",
+                    "constraints": {
+                        "specializes in": "sourdough bread",
+                        "offers": "online ordering"
+                    }
+                }
+            ],
+            "end": "my friend's house",
+            "activity": "dinner",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Trail, finding a route that is mostly unpaved and has scenic overlooks of the lake.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Trail",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly unpaved",
+            "show_along_route": [
+                {
+                    "search": "scenic overlooks of the lake"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor fitness classes scheduled for the spring.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor fitness classes scheduled for the spring"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a retractable roof and serves a wide selection of local beers.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with retractable roof": true,
+                "serves wide selection of": "local beers"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific gourmet grocery store in Frisco (Preston Road) and then to a farmers market near my home that is open on Saturday mornings.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "gourmet grocery store",
+                    "street": "Preston Road",
+                    "city": "Frisco"
+                },
+                {
+                    "search": "farmers market",
+                    "constraints": {
+                        "open on": "Saturday mornings"
+                    },
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "farmers market",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that processes applications for new social security cards.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "processes applications for": "new social security cards"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local winery that offers cheese and charcuterie boards.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local winery",
+                    "constraints": {
+                        "offers": [
+                            "cheese boards",
+                            "charcuterie boards"
+                        ]
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special events planned for the upcoming holidays.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events planned for the upcoming holidays"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has information kiosks about the local ecology.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "information kiosk about local ecology"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any educational programs specifically for adults.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "educational programs specifically for adults"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has service during early morning hours on weekdays.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "weekday service during": "early morning hours"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its gluten-free options in Frisco (Main Street) and then to a park with a playground suitable for toddlers near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free options": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Filter Building and highlighting the Stone Tables and the views of the downtown skyline.",
+        "structured": {
+            "start": "White Rock Lake Filter Building",
+            "city": "Dallas",
+            "end": "White Rock Lake Filter Building",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "views of the downtown skyline"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a medical supply store that sells compression garments near Medical City Plano, avoiding Preston Road during midday.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "medical supply store",
+            "constraints": {
+                "sells": "compression garments"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ],
+            "time_context": "midday"
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local history books and offers a discount for educators, and then to my school.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local history books",
+                        "offers": "discount for educators"
+                    }
+                }
+            ],
+            "end": "my school",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has picnic areas with grills.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "picnic area with grills"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor markets scheduled for the fall.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor markets scheduled for the fall"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a fireplace and serves a wide selection of Texas craft beers.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with fireplace": true,
+                "serves wide selection of": "Texas craft beers"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its French pastries in Frisco (Main Street) and then to a park with a playground suitable for older children near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "French pastries"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for older children",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that provides assistance with retirement benefits.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "provides assistance with": "retirement benefits"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local art gallery showcasing regional artists.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local art gallery",
+                    "constraints": {
+                        "showcasing": "regional artists"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on landscape paintings.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on landscape paintings"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has water fountains that are pet-friendly.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "water fountain that is pet-friendly"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any behind-the-scenes tours specifically for primates.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "behind-the-scenes tours specifically for primates"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has service during early evening hours on weekdays.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "weekday service during": "early evening hours"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its pies in Frisco (Main Street) and then to a park with a playground suitable for all ages near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "pies"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for all ages",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Spillway and highlighting the Stone Tables and the views of the lake's wildlife.",
+        "structured": {
+            "start": "White Rock Lake Spillway",
+            "city": "Dallas",
+            "end": "White Rock Lake Spillway",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "views of the lake's wildlife"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in vestibular rehabilitation near Medical City Plano, avoiding Preston Road due to construction.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "vestibular rehabilitation"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of graphic novels and offers a discount for students, and then to my college campus.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "graphic novels",
+                        "offers": "discount for students"
+                    }
+                }
+            ],
+            "end": "my college campus",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has shaded rest stops.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "shaded rest stop"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor art installations currently on display.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor art installations currently on display"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a view of the Dallas skyline and serves a wide selection of wines.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with view of": "Dallas skyline",
+                "serves wide selection of": "wines"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its cupcakes in Frisco (Main Street) and then to a park with a playground suitable for preschoolers near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "cupcakes"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for preschoolers",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that provides assistance with Supplemental Security Income (SSI).",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "provides assistance with": "Supplemental Security Income (SSI)"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local museum focused on the history of Lake Texoma.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local museum",
+                    "constraints": {
+                        "focused on": "the history of Lake Texoma"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on photography and architecture.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on photography and architecture"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has fitness stations along the trail.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "fitness stations"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any summer camps for children.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "summer camps for children"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has service during late afternoon hours on weekdays.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "weekday service during": "late afternoon hours"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its cookies in Frisco (Main Street) and then to a park with a playground suitable for toddlers and preschoolers near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "cookies"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers and preschoolers",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Dog Park and highlighting the Stone Tables and the views of the lake's sailboats.",
+        "structured": {
+            "start": "White Rock Lake Dog Park",
+            "city": "Dallas",
+            "end": "White Rock Lake Dog Park",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "views of the lake's sailboats"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in sports rehabilitation near Medical City Plano, avoiding Preston Road due to road closures.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "sports rehabilitation"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local authors and offers a book club, and then to my book club meeting.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local authors",
+                        "offers": "book club"
+                    }
+                }
+            ],
+            "end": "my book club meeting",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has water fountains that are also pet-friendly.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "water fountains that are also pet-friendly"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor performances scheduled for the summer.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor performances scheduled for the summer"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a view of Klyde Warren Park and serves a wide selection of frozen drinks.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with view of": "Klyde Warren Park",
+                "serves wide selection of": "frozen drinks"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its vegan cakes in Frisco (Main Street) and then to a park with a playground suitable for toddlers and older children near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "vegan cakes"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers and older children",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that processes applications for replacement social security cards.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "processes applications for": "replacement social security cards"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local art gallery showcasing contemporary art.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local art gallery",
+                    "constraints": {
+                        "showcasing": "contemporary art"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on art from the American West.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on art from the American West"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has historical markers along the trail.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "historical markers"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any special events scheduled for Halloween.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events scheduled for Halloween"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has service during late night hours on weekends.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "weekend service during": "late night hours"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its bread in Frisco (Main Street) and then to a park with a playground suitable for toddlers and older children with accessible features near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "bread"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers and older children with accessible features",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Museum and highlighting the Stone Tables and the views of the lake's wildlife and sailboats.",
+        "structured": {
+            "start": "White Rock Lake Museum",
+            "city": "Dallas",
+            "end": "White Rock Lake Museum",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "views of the lake's wildlife and sailboats"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in vestibular rehabilitation near Medical City Plano, avoiding Preston Road due to construction and with a preference for clinics that offer virtual consultations.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "vestibular rehabilitation",
+                "offers": "virtual consultations"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local authors and offers a rewards program, and then to my favorite coffee shop.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local authors",
+                        "offers": "rewards program"
+                    }
+                }
+            ],
+            "end": "my favorite coffee shop",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has bike repair stations and water fountains that are also pet-friendly.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "bike repair stations"
+                },
+                {
+                    "search": "water fountains that are also pet-friendly"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor concerts or movie nights scheduled for the fall.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor concerts or movie nights scheduled for the fall"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a view of the Dallas Arts District and serves a wide selection of craft cocktails and appetizers.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with view of": "Dallas Arts District",
+                "serves wide selection of": [
+                    "craft cocktails",
+                    "appetizers"
+                ]
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its wedding cakes in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, and older children near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "known for": "wedding cakes"
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, and older children",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that provides assistance with Medicare Part D.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "provides assistance with": "Medicare Part D"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local museum focused on the history of the Red River.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local museum",
+                    "constraints": {
+                        "focused on": "the history of the Red River"
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on art from the Renaissance period.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on art from the Renaissance period"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has picnic tables and water fountains along the trail.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "picnic tables"
+                },
+                {
+                    "search": "water fountains"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any discounts available for military personnel.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "discounts available for military personnel"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has express service available during market weeks.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "express service available during": "market weeks"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its vegan and gluten-free options in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, and older children with accessible features near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "vegan and gluten-free options": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, and older children with accessible features",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Spillway and highlighting the Stone Tables, the Filter Building, and the views of the lake's wildlife.",
+        "structured": {
+            "start": "White Rock Lake Spillway",
+            "city": "Dallas",
+            "end": "White Rock Lake Spillway",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "the Filter Building",
+                "views of the lake's wildlife"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in vestibular rehabilitation near Medical City Plano, avoiding Preston Road due to construction and with a preference for clinics that offer virtual consultations and home exercise programs.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "vestibular rehabilitation",
+                "offers": [
+                    "virtual consultations",
+                    "home exercise programs"
+                ]
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local authors and offers a membership program and a cafe, and then to my favorite bookstore.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local authors",
+                        "offers": [
+                            "membership program",
+                            "cafe"
+                        ]
+                    }
+                }
+            ],
+            "end": "my favorite bookstore",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has bike repair stations and shaded rest stops.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "bike repair stations"
+                },
+                {
+                    "search": "shaded rest stops"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor concerts or movie nights scheduled for the summer and fall.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor concerts or movie nights scheduled for the summer and fall"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a view of the Dallas skyline and serves a wide selection of Texas craft beers and cocktails.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with view of": "Dallas skyline",
+                "serves wide selection of": [
+                    "Texas craft beers",
+                    "cocktails"
+                ]
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its gluten-free and vegan cakes in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, older children, and with accessible features near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free and vegan cakes": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, older children, and with accessible features",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that processes applications for Supplemental Security Income (SSI).",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "processes applications for": "Supplemental Security Income (SSI)"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local museum focused on the history of the Chisholm Trail and the cattle drives.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local museum",
+                    "constraints": {
+                        "focused on": [
+                            "the history of the Chisholm Trail",
+                            "the cattle drives"
+                        ]
+                    },
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on art from the 19th and 20th centuries.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on art from the 19th and 20th centuries"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has exercise equipment and fitness stations along the trail.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "exercise equipment"
+                },
+                {
+                    "search": "fitness stations"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any special events scheduled for the holiday season.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events scheduled for the holiday season"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has service during early morning and late night hours on weekdays.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "weekday service during": [
+                    "early morning hours",
+                    "late night hours"
+                ]
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its gluten-free and vegan options in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free and vegan options": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Filter Building and highlighting the Stone Tables, the Filter Building, the views of the downtown skyline, and the views of the lake's wildlife.",
+        "structured": {
+            "start": "White Rock Lake Filter Building",
+            "city": "Dallas",
+            "end": "White Rock Lake Filter Building",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "the Filter Building",
+                "views of the downtown skyline",
+                "views of the lake's wildlife"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in vestibular rehabilitation near Medical City Plano, avoiding Preston Road due to construction and with a preference for clinics that offer virtual consultations, home exercise programs, and have excellent patient reviews.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "vestibular rehabilitation",
+                "offers": [
+                    "virtual consultations",
+                    "home exercise programs"
+                ],
+                "rating": "excellent"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local authors and offers a membership program, a cafe, and hosts author events, and then to my favorite bookstore that also has a coffee shop.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local authors",
+                        "offers": [
+                            "membership program",
+                            "cafe",
+                            "hosts author events"
+                        ]
+                    }
+                }
+            ],
+            "end": "my favorite bookstore that also has a coffee shop",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has bike repair stations, shaded rest stops, and water fountains that are also pet-friendly.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "bike repair stations"
+                },
+                {
+                    "search": "shaded rest stops"
+                },
+                {
+                    "search": "water fountains that are also pet-friendly"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor concerts or movie nights scheduled for the summer and fall, and if they offer any discounts for students or seniors.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor concerts or movie nights scheduled for the summer and fall",
+                "discounts for students or seniors"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a view of the Dallas skyline and serves a wide selection of Texas craft beers and cocktails, and that offers live music on Friday nights.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with view of": "Dallas skyline",
+                "serves wide selection of": [
+                    "Texas craft beers",
+                    "cocktails"
+                ],
+                "live music on": "Friday nights"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its gluten-free and vegan cakes in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad near my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free and vegan cakes": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that processes applications for Supplemental Security Income (SSI) and offers assistance in multiple languages.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "processes applications for": "Supplemental Security Income (SSI)",
+                "offers assistance in": "multiple languages"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local museum focused on the history of the Chisholm Trail and the cattle drives, and a scenic overlook of Lake Texoma.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local museum",
+                    "constraints": {
+                        "focused on": [
+                            "the history of the Chisholm Trail",
+                            "the cattle drives"
+                        ]
+                    },
+                    "location_preference": "along the way"
+                },
+                {
+                    "search": "scenic overlook of Lake Texoma",
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on art from the 19th and 20th centuries, and if they offer audio guides in multiple languages.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on art from the 19th and 20th centuries",
+                "audio guides in multiple languages"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has exercise equipment and fitness stations along the trail, and that is well-lit at night.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "exercise equipment"
+                },
+                {
+                    "search": "fitness stations"
+                }
+            ],
+            "constraints": {
+                "well-lit at": "night"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any special events scheduled for the holiday season, and if they offer any discounts for AAA members.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events scheduled for the holiday season",
+                "discounts for AAA members"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has express service available during market weeks, and that has on-site parking information available.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "express service available during": "market weeks"
+            },
+            "request_info": [
+                "on-site parking information available"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its gluten-free and vegan options in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad and restrooms nearby my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free and vegan options": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad and restrooms",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Filter Building and highlighting the Stone Tables, the Filter Building, the views of the downtown skyline, and the views of the lake's wildlife, and the historic Bath House Cultural Arts Center.",
+        "structured": {
+            "start": "White Rock Lake Filter Building",
+            "city": "Dallas",
+            "end": "White Rock Lake Filter Building",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "the Filter Building",
+                "views of the downtown skyline",
+                "views of the lake's wildlife",
+                "historic Bath House Cultural Arts Center"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in vestibular rehabilitation near Medical City Plano, avoiding Preston Road due to construction and with a preference for clinics that offer virtual consultations, home exercise programs, have excellent patient reviews, and offer early morning or late evening appointments.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "vestibular rehabilitation",
+                "offers": [
+                    "virtual consultations",
+                    "home exercise programs"
+                ],
+                "rating": "excellent",
+                "appointment_availability": [
+                    "early morning",
+                    "late evening"
+                ]
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local authors and offers a membership program, a cafe, hosts author events, and has comfortable reading chairs, and then to my favorite bookstore that also has a coffee shop and hosts open mic nights.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local authors",
+                        "offers": [
+                            "membership program",
+                            "cafe",
+                            "hosts author events"
+                        ],
+                        "has": "comfortable reading chairs"
+                    }
+                }
+            ],
+            "end": "my favorite bookstore that also has a coffee shop and hosts open mic nights",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike ride from the Trinity Trails in Fort Worth along the Clear Fork to the Benbrook Lake Marina, finding a route that is mostly paved and has bike repair stations, shaded rest stops, water fountains that are also pet-friendly, and scenic views of the river and the lake.",
+        "structured": {
+            "start": "Trinity Trails",
+            "proximity": "Clear Fork, Fort Worth",
+            "end": "Benbrook Lake Marina",
+            "city": "Fort Worth",
+            "travel_mode": "bicycling",
+            "preference": "mostly paved",
+            "show_along_route": [
+                {
+                    "search": "bike repair stations"
+                },
+                {
+                    "search": "shaded rest stops"
+                },
+                {
+                    "search": "water fountains that are also pet-friendly"
+                },
+                {
+                    "search": "scenic views of the river and the lake"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Dallas Arboretum and Botanical Garden to the Klyde Warren Park, and check if they have any outdoor concerts or movie nights scheduled for the summer and fall, if they offer any discounts for students or seniors, and if they have information about nearby parking options.",
+        "structured": {
+            "start": "Dallas Arboretum and Botanical Garden",
+            "city": "Dallas",
+            "end": "Klyde Warren Park",
+            "travel_mode": "driving",
+            "request_info": [
+                "outdoor concerts or movie nights scheduled for the summer and fall",
+                "discounts for students or seniors",
+                "nearby parking options"
+            ]
+        }
+    },
+    {
+        "query": "I want to walk from my hotel in the Uptown Dallas area to a bar with a rooftop patio that has a view of the Dallas skyline and serves a wide selection of Texas craft beers and cocktails, and that offers live music on Friday nights and has a casual dress code.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "Uptown Dallas",
+            "end": "bar",
+            "travel_mode": "walking",
+            "constraints": {
+                "rooftop patio with view of": "Dallas skyline",
+                "serves wide selection of": [
+                    "Texas craft beers",
+                    "cocktails"
+                ],
+                "live music on": "Friday nights",
+                "dress code": "casual"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my home in Allen to a specific bakery known for its gluten-free and vegan options in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad and restrooms and picnic shelters nearby my home.",
+        "structured": {
+            "start": "home",
+            "city": "Allen",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free and vegan options": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad and restrooms and picnic shelters",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Find the fastest route to drive from my location to the nearest Social Security office that processes applications for Supplemental Security Income (SSI) and offers assistance in multiple languages and has accessible parking.",
+        "structured": {
+            "start": "current_location",
+            "end": "Social Security office",
+            "constraints": {
+                "processes applications for": "Supplemental Security Income (SSI)",
+                "offers assistance in": "multiple languages",
+                "has": "accessible parking"
+            },
+            "location": "nearest",
+            "travel_mode": "driving",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a road trip from my house in Prosper to the Eisenhower State Park near Denison, including a stop at a local museum focused on the history of the Chisholm Trail and the cattle drives, a scenic overlook of Lake Texoma, and a restaurant with lake views.",
+        "structured": {
+            "start": "home",
+            "city": "Prosper",
+            "end": "Eisenhower State Park",
+            "proximity": "Denison",
+            "travel_mode": "driving",
+            "stops": [
+                {
+                    "search": "local museum",
+                    "constraints": {
+                        "focused on": [
+                            "the history of the Chisholm Trail",
+                            "the cattle drives"
+                        ]
+                    },
+                    "location_preference": "along the way"
+                },
+                {
+                    "search": "scenic overlook of Lake Texoma",
+                    "location_preference": "along the way"
+                },
+                {
+                    "search": "restaurant with lake views",
+                    "location_preference": "along the way"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the Amon Carter Museum of American Art in Fort Worth to the Kimbell Art Foundation, and find out if they have any special exhibits focused on art from the 19th and 20th centuries, if they offer audio guides in multiple languages, and if they have any family-friendly activities scheduled for the weekend.",
+        "structured": {
+            "start": "Amon Carter Museum of American Art",
+            "city": "Fort Worth",
+            "end": "Kimbell Art Foundation",
+            "travel_mode": "driving",
+            "request_info": [
+                "special exhibits focused on art from the 19th and 20th centuries",
+                "audio guides in multiple languages",
+                "family-friendly activities scheduled for the weekend"
+            ]
+        }
+    },
+    {
+        "query": "I want to bike from my apartment near UNT to the Elm Fork Greenbelt, using a route that is mostly flat and has exercise equipment and fitness stations along the trail, and that is well-lit at night and has water fountains available at regular intervals.",
+        "structured": {
+            "start": "my apartment",
+            "proximity": "UNT, Denton",
+            "end": "Elm Fork Greenbelt",
+            "city": "Denton",
+            "travel_mode": "bicycling",
+            "preference": "mostly flat",
+            "show_along_route": [
+                {
+                    "search": "exercise equipment"
+                },
+                {
+                    "search": "fitness stations"
+                },
+                {
+                    "search": "water fountain",
+                    "frequency": "regular intervals"
+                }
+            ],
+            "constraints": {
+                "well-lit at": "night"
+            }
+        }
+    },
+    {
+        "query": "Drive me from my hotel in downtown Fort Worth to the Fort Worth Zoo, and check if they have any special events scheduled for the holiday season, if they offer any discounts for AAA members, and if they have stroller rentals available.",
+        "structured": {
+            "start": "my hotel",
+            "proximity": "downtown Fort Worth",
+            "end": "Fort Worth Zoo",
+            "city": "Fort Worth",
+            "travel_mode": "driving",
+            "request_info": [
+                "special events scheduled for the holiday season",
+                "discounts for AAA members",
+                "stroller rentals available"
+            ]
+        }
+    },
+    {
+        "query": "Find the cheapest public transportation route from my location to the Dallas Market Center that is wheelchair accessible and has express service available during market weeks, and that has on-site parking information available and is located near a DART Rail station.",
+        "structured": {
+            "start": "current_location",
+            "end": "Dallas Market Center",
+            "city": "Dallas",
+            "travel_mode": "public_transportation",
+            "preference": "cheapest",
+            "accessibility": "wheelchair",
+            "constraints": {
+                "express service available during": "market weeks"
+            },
+            "request_info": [
+                "on-site parking information available"
+            ],
+            "proximity_to": "DART Rail station"
+        }
+    },
+    {
+        "query": "Drive me from my home in Little Elm to a specific bakery known for its gluten-free and vegan options in Frisco (Main Street) and then to a park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad and restrooms and picnic shelters and walking trails nearby my home.",
+        "structured": {
+            "start": "home",
+            "city": "Little Elm",
+            "stops": [
+                {
+                    "poi": "bakery",
+                    "street": "Main Street",
+                    "city": "Frisco",
+                    "constraints": {
+                        "gluten-free and vegan options": true
+                    }
+                },
+                {
+                    "search": "park with a playground suitable for toddlers, preschoolers, older children, and with accessible features, and with a dog park and a splash pad and restrooms and picnic shelters and walking trails",
+                    "proximity": "near my home"
+                }
+            ],
+            "end": "park",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a scenic walking route around White Rock Lake in Dallas, starting and ending at the White Rock Lake Filter Building and highlighting the Stone Tables, the Filter Building, the views of the downtown skyline, the views of the lake's wildlife, the historic Bath House Cultural Arts Center, and the White Rock Lake Museum.",
+        "structured": {
+            "start": "White Rock Lake Filter Building",
+            "city": "Dallas",
+            "end": "White Rock Lake Filter Building",
+            "travel_mode": "walking",
+            "route_type": "around White Rock Lake",
+            "preference": "scenic",
+            "show_along_route": [
+                "Stone Tables",
+                "the Filter Building",
+                "views of the downtown skyline",
+                "views of the lake's wildlife",
+                "historic Bath House Cultural Arts Center",
+                "White Rock Lake Museum"
+            ]
+        }
+    },
+    {
+        "query": "I need to drive from my appointment at the Texas Health Presbyterian Hospital Plano to a physical therapy clinic specializing in vestibular rehabilitation near Medical City Plano, avoiding Preston Road due to construction and with a preference for clinics that offer virtual consultations, home exercise programs, have excellent patient reviews, offer early morning or late evening appointments, and accept my specific insurance plan.",
+        "structured": {
+            "start": "Texas Health Presbyterian Hospital Plano",
+            "city": "Plano",
+            "end": "physical therapy clinic",
+            "constraints": {
+                "specializing in": "vestibular rehabilitation",
+                "offers": [
+                    "virtual consultations",
+                    "home exercise programs"
+                ],
+                "rating": "excellent",
+                "appointment_availability": [
+                    "early morning",
+                    "late evening"
+                ],
+                "accepts": "my specific insurance plan"
+            },
+            "proximity": "Medical City Plano",
+            "travel_mode": "driving",
+            "avoid": [
+                "Preston Road"
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest independent bookstore that has a good selection of local authors and offers a membership program, a cafe, hosts author events, has comfortable reading chairs, and offers free Wi-Fi, and then to my favorite bookstore that also has a coffee shop and hosts open mic nights and has extended hours on weekends.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "independent bookstore",
+                    "location": "nearest",
+                    "constraints": {
+                        "good selection of": "local authors",
+                        "offers": [
+                            "membership program",
+                            "cafe",
+                            "hosts author events"
+                        ],
+                        "has": [
+                            "comfortable reading chairs",
+                            "free Wi-Fi"
+                        ]
+                    }
+                }
+            ],
+            "end": "my favorite bookstore that also has a coffee shop and hosts open mic nights and has extended hours on weekends",
+            "travel_mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a bike route from my home to the library, ensuring it includes designated bike lanes and is under 5 miles.",
+        "structured": {
+            "start": "home",
+            "end": "library",
+            "mode": "biking",
+            "constraints": {
+                "includes": "bike lanes",
+                "distance": "< 5 miles"
+            }
+        }
+    },
+    {
+        "query": "Find a dog-friendly walking route in a park near me that is at least 2 miles long and has water fountains.",
+        "structured": {
+            "start": "current_location",
+            "search": "park",
+            "mode": "walking",
+            "constraints": {
+                "dog-friendly": true,
+                "distance": ">= 2 miles",
+                "has": "water fountains"
+            }
+        }
+    },
+    {
+        "query": "I need to drive from my office to the airport during rush hour, avoiding major highways if possible and suggesting the route with the least expected traffic.",
+        "structured": {
+            "start": "office",
+            "end": "airport",
+            "mode": "driving",
+            "time_context": "rush hour",
+            "avoid": [
+                "major highways"
+            ],
+            "preference": "least traffic"
+        }
+    },
+    {
+        "query": "Plan a scenic motorcycle ride starting from my location that is approximately 100 miles and includes at least one overlook point with good views.",
+        "structured": {
+            "start": "current_location",
+            "mode": "motorcycling",
+            "preference": "scenic",
+            "constraints": {
+                "distance": "~ 100 miles",
+                "includes": "overlook point with good views"
+            }
+        }
+    },
+    {
+        "query": "Find public transportation options from my hotel to the museum that involve both bus and train and take no more than 45 minutes.",
+        "structured": {
+            "start": "my hotel",
+            "end": "museum",
+            "mode": "public_transport",
+            "constraints": {
+                "includes": [
+                    "bus",
+                    "train"
+                ],
+                "duration": "<= 45 minutes"
+            }
+        }
+    },
+    {
+        "query": "I want to walk to a coffee shop that opens before 7 AM and is within a 1-mile radius.",
+        "structured": {
+            "start": "current_location",
+            "search": "coffee shop",
+            "mode": "walking",
+            "constraints": {
+                "opens before": "07:00",
+                "distance": "<= 1 mile"
+            }
+        }
+    },
+    {
+        "query": "Plan a road trip from Dallas to Austin that avoids Interstate 35 and includes a stop for lunch at a restaurant with vegetarian options in a town with historical significance.",
+        "structured": {
+            "start": "Dallas",
+            "end": "Austin",
+            "mode": "driving",
+            "avoid": [
+                "Interstate 35"
+            ],
+            "stops": [
+                {
+                    "search": "restaurant with vegetarian options",
+                    "constraints": {
+                        "in town with": "historical significance"
+                    },
+                    "activity": "lunch"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Find the nearest electric vehicle charging station that is currently available and within a 5-minute drive.",
+        "structured": {
+            "start": "current_location",
+            "search": "electric vehicle charging station",
+            "location": "nearest",
+            "constraints": {
+                "status": "available",
+                "driving_time": "<= 5 minutes"
+            }
+        }
+    },
+    {
+        "query": "I need to drive from home to a specific park and find a parking spot close to the entrance that is wheelchair accessible.",
+        "structured": {
+            "start": "home",
+            "end": "specific park",
+            "mode": "driving",
+            "constraints": {
+                "parking near entrance": true,
+                "parking accessible": "wheelchair"
+            }
+        }
+    },
+    {
+        "query": "Plan a walking tour of downtown with at least 5 historical landmarks, starting and ending at the visitor center.",
+        "structured": {
+            "start": "visitor center",
+            "end": "visitor center",
+            "mode": "walking",
+            "type": "tour",
+            "area": "downtown",
+            "constraints": {
+                "includes at least": "5 historical landmarks"
+            }
+        }
+    },
+    {
+        "query": "Find a bus route from my location to the university that operates on weekends.",
+        "structured": {
+            "start": "current_location",
+            "end": "university",
+            "mode": "bus",
+            "constraints": {
+                "operates on": "weekends"
+            }
+        }
+    },
+    {
+        "query": "I want to drive to a lake with boat rentals and picnic areas, avoiding roads with heavy truck traffic.",
+        "structured": {
+            "start": "current_location",
+            "search": "lake",
+            "mode": "driving",
+            "constraints": {
+                "has": [
+                    "boat rentals",
+                    "picnic areas"
+                ]
+            },
+            "avoid": [
+                "heavy truck traffic"
+            ]
+        }
+    },
+    {
+        "query": "Plan a scenic bike ride along a river trail near me that is at least 10 miles and has restrooms along the way.",
+        "structured": {
+            "start": "current_location",
+            "search": "river trail",
+            "mode": "biking",
+            "preference": "scenic",
+            "constraints": {
+                "distance": ">= 10 miles",
+                "has": "restrooms along the way"
+            }
+        }
+    },
+    {
+        "query": "Find the quickest public transit route from my location to the theater that arrives no later than 7:30 PM.",
+        "structured": {
+            "start": "current_location",
+            "end": "theater",
+            "mode": "public_transport",
+            "constraints": {
+                "arrive by": "19:30"
+            },
+            "preference": "quickest"
+        }
+    },
+    {
+        "query": "I need to drive from my apartment to the grocery store and then to the dry cleaners before returning home.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "end": "grocery store"
+                },
+                {
+                    "end": "dry cleaners"
+                }
+            ],
+            "end": "home",
+            "mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a walking route that connects three specific landmarks in the city center.",
+        "structured": {
+            "start": "landmark 1",
+            "stops": [
+                "landmark 2"
+            ],
+            "end": "landmark 3",
+            "mode": "walking",
+            "area": "city center"
+        }
+    },
+    {
+        "query": "Find a train route from my city to another city that has sleeper car options and allows pets.",
+        "structured": {
+            "start": "my city",
+            "end": "another city",
+            "mode": "train",
+            "constraints": {
+                "has": "sleeper car options",
+                "allows": "pets"
+            }
+        }
+    },
+    {
+        "query": "I want to drive to a hiking trail that is rated easy and is within a 30-minute drive from my house.",
+        "structured": {
+            "start": "home",
+            "search": "hiking trail",
+            "mode": "driving",
+            "constraints": {
+                "rating": "easy",
+                "driving_time": "<= 30 minutes"
+            }
+        }
+    },
+    {
+        "query": "Plan a bike commute route from my home to my workplace that is mostly flat and has dedicated bike paths.",
+        "structured": {
+            "start": "home",
+            "end": "workplace",
+            "mode": "biking",
+            "type": "commute",
+            "preference": "mostly flat",
+            "constraints": {
+                "has": "dedicated bike paths"
+            }
+        }
+    },
+    {
+        "query": "Find the nearest car repair shop that is open on Sundays and offers shuttle service.",
+        "structured": {
+            "start": "current_location",
+            "search": "car repair shop",
+            "location": "nearest",
+            "constraints": {
+                "open on": "Sunday",
+                "offers": "shuttle service"
+            }
+        }
+    },
+    {
+        "query": "I need to drive from my hotel to a specific restaurant, but I want to avoid a particular street due to construction.",
+        "structured": {
+            "start": "my hotel",
+            "end": "specific restaurant",
+            "mode": "driving",
+            "avoid": [
+                "particular street"
+            ]
+        }
+    },
+    {
+        "query": "Plan a walking route in a botanical garden that highlights specific plant collections.",
+        "structured": {
+            "start": "botanical garden entrance",
+            "end": "botanical garden exit",
+            "mode": "walking",
+            "type": "tour",
+            "area": "botanical garden",
+            "show_along_route": [
+                "specific plant collections"
+            ]
+        }
+    },
+    {
+        "query": "Find a public bus that goes directly from my neighborhood to the central library.",
+        "structured": {
+            "start": "my neighborhood",
+            "end": "central library",
+            "mode": "bus",
+            "constraints": {
+                "direct route": true
+            }
+        }
+    },
+    {
+        "query": "I want to drive to a scenic overlook within 50 miles that is known for its sunset views.",
+        "structured": {
+            "start": "current_location",
+            "search": "scenic overlook",
+            "mode": "driving",
+            "constraints": {
+                "distance": "<= 50 miles",
+                "known for": "sunset views"
+            }
+        }
+    },
+    {
+        "query": "Plan a bike ride that connects two parks and includes a stop at a cafe with outdoor seating.",
+        "structured": {
+            "start": "park A",
+            "stops": [
+                {
+                    "search": "cafe with outdoor seating"
+                }
+            ],
+            "end": "park B",
+            "mode": "biking"
+        }
+    },
+    {
+        "query": "Find the fastest route to the airport using a ride-sharing service during morning peak hours.",
+        "structured": {
+            "start": "current_location",
+            "end": "airport",
+            "mode": "ride-sharing",
+            "time_context": "morning peak hours",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "I need to drive from my office to a client's location and then to a print shop before returning to the office.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                {
+                    "end": "client's location"
+                },
+                {
+                    "end": "print shop"
+                }
+            ],
+            "end": "office",
+            "mode": "driving"
+        }
+    },
+    {
+        "query": "Plan a walking tour of historical markers in the old town district.",
+        "structured": {
+            "start": "old town district",
+            "end": "old town district",
+            "mode": "walking",
+            "type": "tour",
+            "area": "old town district",
+            "show_along_route": [
+                "historical markers"
+            ]
+        }
+    },
+    {
+        "query": "Find a train station that has long-term parking available near my destination city.",
+        "structured": {
+            "search": "train station",
+            "constraints": {
+                "has": "long-term parking"
+            },
+            "proximity_to": "destination city"
+        }
+    },
+    {
+        "query": "I want to drive to a state park with hiking trails of varying difficulty levels and camping facilities.",
+        "structured": {
+            "start": "current_location",
+            "search": "state park",
+            "mode": "driving",
+            "constraints": {
+                "has": [
+                    "hiking trails of varying difficulty levels",
+                    "camping facilities"
+                ]
+            }
+        }
+    },
+    {
+        "query": "Plan a bike route that avoids hills as much as possible from my home to the community center.",
+        "structured": {
+            "start": "home",
+            "end": "community center",
+            "mode": "biking",
+            "preference": "avoid hills"
+        }
+    },
+    {
+        "query": "Find the nearest urgent care center that is in my insurance network and has short wait times.",
+        "structured": {
+            "start": "current_location",
+            "search": "urgent care center",
+            "location": "nearest",
+            "constraints": {
+                "in my network": true,
+                "wait times": "short"
+            }
+        }
+    },
+    {
+        "query": "I need to drive from the convention center to a specific hotel, but I want to take the most direct route.",
+        "structured": {
+            "start": "convention center",
+            "end": "specific hotel",
+            "mode": "driving",
+            "preference": "direct"
+        }
+    },
+    {
+        "query": "Plan a walking route through a sculpture garden that includes all the major installations.",
+        "structured": {
+            "start": "sculpture garden entrance",
+            "end": "sculpture garden exit",
+            "mode": "walking",
+            "type": "tour",
+            "area": "sculpture garden",
+            "show_along_route": [
+                "all major installations"
+            ]
+        }
+    }
+]

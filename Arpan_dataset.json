@@ -1,0 +1,3766 @@
+[
+    {
+        "query": "I need to go to my friend's house, then pick up a package from the post office, and finally head home before 7 PM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "friend's house"
+                },
+                {
+                    "location": "post office"
+                }
+            ],
+            "end": "home",
+            "arrive_by": "19:00"
+        }
+    },
+    {
+        "query": "Plan a route from my home to the airport, but I want to stop at a pharmacy on the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "pharmacy"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Find the fastest way to reach the mall, but avoid highways.",
+        "structured": {
+            "start": "current_location",
+            "end": "mall",
+            "avoid": [
+                "highways"
+            ],
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "I need to drop my kid at school by 8 AM and then go to work.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "school",
+                    "arrive_by": "08:00"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "Take me to the nearest gas station and then continue to my destination.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "nearby"
+                }
+            ],
+            "end": "destination"
+        }
+    },
+    {
+        "query": "Find a scenic route from Los Angeles to San Francisco.",
+        "structured": {
+            "start": "Los Angeles",
+            "end": "San Francisco",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan a road trip from Chicago to Miami with stops at Nashville and Atlanta.",
+        "structured": {
+            "start": "Chicago",
+            "stops": [
+                "Nashville",
+                "Atlanta"
+            ],
+            "end": "Miami"
+        }
+    },
+    {
+        "query": "Take me to the train station using public transport.",
+        "structured": {
+            "start": "current_location",
+            "end": "train station",
+            "mode": "public_transport"
+        }
+    },
+    {
+        "query": "I want to go to the beach but avoid toll roads.",
+        "structured": {
+            "start": "current_location",
+            "end": "beach",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Drive me to the nearest hospital as quickly as possible.",
+        "structured": {
+            "start": "current_location",
+            "search": "hospital",
+            "location": "nearest",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Find a route from my office to downtown while avoiding areas with heavy rain.",
+        "structured": {
+            "start": "office",
+            "end": "downtown",
+            "avoid_weather": "heavy_rain"
+        }
+    },
+    {
+        "query": "Plan a trip from New York to Washington, D.C. with EV charging stops every 150 miles.",
+        "structured": {
+            "start": "New York",
+            "end": "Washington, D.C.",
+            "vehicle": "EV",
+            "charge_interval": 150
+        }
+    },
+    {
+        "query": "Suggest a route from my home to the gym, and then to my friend\u2019s house, avoiding traffic.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "gym"
+                },
+                {
+                    "location": "friend's house"
+                }
+            ],
+            "preference": "avoid_traffic"
+        }
+    },
+    {
+        "query": "Show me the best bike route from Central Park to Brooklyn Bridge.",
+        "structured": {
+            "start": "Central Park",
+            "end": "Brooklyn Bridge",
+            "mode": "bike"
+        }
+    },
+    {
+        "query": "Find a route from my hotel to the museum and back.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                {
+                    "location": "museum"
+                }
+            ],
+            "end": "hotel"
+        }
+    },
+    {
+        "query": "Where can I park near the stadium?",
+        "structured": {
+            "search": "parking",
+            "location": "stadium"
+        }
+    },
+    {
+        "query": "Plan my commute from home to work with the least fuel consumption.",
+        "structured": {
+            "start": "home",
+            "end": "work",
+            "preference": "fuel_efficient"
+        }
+    },
+    {
+        "query": "Take me to the city center but avoid highways and tunnels.",
+        "structured": {
+            "start": "current_location",
+            "end": "city center",
+            "avoid": [
+                "highways",
+                "tunnels"
+            ]
+        }
+    },
+    {
+        "query": "I want to visit three places today: the bakery, the bookstore, and my cousin\u2019s house. I need to be at my cousin\u2019s house by 6 PM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "bakery"
+                },
+                {
+                    "location": "bookstore"
+                },
+                {
+                    "location": "cousin\u2019s house",
+                    "arrive_by": "18:00"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Find me a route to the zoo with a lunch stop at a nearby restaurant.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "nearby"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "I need to drop my kids at school by 8 AM, then pick up dry cleaning, stop at a grocery store for 20 minutes, and finally reach my office by 9:30 AM.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "school",
+                    "arrive_by": "08:00"
+                },
+                {
+                    "location": "dry cleaning"
+                },
+                {
+                    "location": "grocery store",
+                    "duration": 20
+                }
+            ],
+            "end": "office",
+            "arrive_by": "09:30"
+        }
+    },
+    {
+        "query": "Plan a long road trip from New York to Los Angeles with rest stops every 300 miles and a night stay in Chicago and Denver.",
+        "structured": {
+            "start": "New York",
+            "stops": [
+                {
+                    "location": "Chicago",
+                    "stay_overnight": true
+                },
+                {
+                    "location": "Denver",
+                    "stay_overnight": true
+                }
+            ],
+            "end": "Los Angeles",
+            "rest_stops_interval": 300
+        }
+    },
+    {
+        "query": "Find the shortest route from my house to the airport with a quick stop at a nearby ATM.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "ATM",
+                    "location": "nearby"
+                }
+            ],
+            "end": "airport",
+            "preference": "shortest"
+        }
+    },
+    {
+        "query": "Show me a scenic drive from San Francisco to Yosemite National Park with a stop at a famous viewpoint.",
+        "structured": {
+            "start": "San Francisco",
+            "stops": [
+                {
+                    "search": "viewpoint",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Yosemite National Park",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan a trip from Dallas to Houston where I stop for lunch at a Mexican restaurant and refuel at a gas station.",
+        "structured": {
+            "start": "Dallas",
+            "stops": [
+                {
+                    "search": "Mexican restaurant",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Houston"
+        }
+    },
+    {
+        "query": "Drive me from my office to my home, but I want to pick up my friend from his house on the way.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                {
+                    "location": "friend's house"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Find me a fast route from my home to the stadium, avoiding tolls and highways, and parking near the entrance.",
+        "structured": {
+            "start": "home",
+            "end": "stadium",
+            "avoid": [
+                "tolls",
+                "highways"
+            ],
+            "parking": "near entrance",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "I need to reach the train station by 5 PM, but first, I have to drop my wife at the salon and my kids at their music class.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "salon"
+                },
+                {
+                    "location": "music class"
+                }
+            ],
+            "end": "train station",
+            "arrive_by": "17:00"
+        }
+    },
+    {
+        "query": "Plan my road trip from Miami to New Orleans, but I want to visit a historical site and a popular seafood restaurant on the way.",
+        "structured": {
+            "start": "Miami",
+            "stops": [
+                {
+                    "search": "historical site",
+                    "location": "on_route"
+                },
+                {
+                    "search": "seafood restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "New Orleans"
+        }
+    },
+    {
+        "query": "Suggest the best driving route from my hotel to the city museum and then to a theater, avoiding traffic congestion.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                {
+                    "location": "city museum"
+                },
+                {
+                    "location": "theater"
+                }
+            ],
+            "preference": "avoid_traffic"
+        }
+    },
+    {
+        "query": "Find a route from my home to my workplace, but I want to take a break at a coffee shop halfway through.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "halfway"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "I need a route to a mall that has free parking and electric vehicle charging stations.",
+        "structured": {
+            "start": "current_location",
+            "search": "mall",
+            "requirements": [
+                "free_parking",
+                "EV_charging"
+            ]
+        }
+    },
+    {
+        "query": "Take me on a drive along the coastline, starting from Santa Monica Pier and ending at a lighthouse, with a stop at a seafood restaurant.",
+        "structured": {
+            "start": "Santa Monica Pier",
+            "stops": [
+                {
+                    "search": "seafood restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "lighthouse",
+            "preference": "coastal_route"
+        }
+    },
+    {
+        "query": "Plan my evening drive from my house to a rooftop restaurant with the best city view and then back home.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "rooftop restaurant",
+                    "location": "best city view"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Drive me from my university to the train station, but stop at the library first and then a nearby coffee shop.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                {
+                    "location": "library"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "nearby"
+                }
+            ],
+            "end": "train station"
+        }
+    },
+    {
+        "query": "Plan a scenic motorcycle ride from Las Vegas to the Grand Canyon with a stop at a famous biker caf\u00e9.",
+        "structured": {
+            "start": "Las Vegas",
+            "stops": [
+                {
+                    "search": "biker caf\u00e9",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Grand Canyon",
+            "mode": "motorcycle",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Find the best way to reach my friend\u2019s house in the suburbs, but I want to stop at a bakery and pick up a cake on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                }
+            ],
+            "end": "friend's house"
+        }
+    },
+    {
+        "query": "Plan a late-night drive from my apartment to a 24-hour diner and then to the beach to watch the sunrise.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "search": "24-hour diner"
+                },
+                {
+                    "location": "beach"
+                }
+            ],
+            "preference": "late_night"
+        }
+    },
+    {
+        "query": "I need to visit three locations: the doctor\u2019s clinic, the bank, and then my parent\u2019s house, but I need to be at the bank by 2 PM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "doctor\u2019s clinic"
+                },
+                {
+                    "location": "bank",
+                    "arrive_by": "14:00"
+                }
+            ],
+            "end": "parent\u2019s house"
+        }
+    },
+    {
+        "query": "Drive me to the airport, but make a stop at a park on the way for 15 minutes.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route",
+                    "duration": 15
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I need to go to the pharmacy, then to the supermarket, and finally to the post office before it closes at 6 PM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "pharmacy"
+                },
+                {
+                    "location": "supermarket"
+                },
+                {
+                    "location": "post office",
+                    "arrive_by": "18:00"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Take me to the nearest hospital, then to a gas station, and finally to my home.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "hospital",
+                    "location": "nearest"
+                },
+                {
+                    "search": "gas station",
+                    "location": "nearby"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Find a route from my office to the city center with a stop at a coffee shop, avoiding traffic.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "city center",
+            "preference": "avoid_traffic"
+        }
+    },
+    {
+        "query": "I need to go from my house to the bank, then to the grocery store, and back home.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "bank"
+                },
+                {
+                    "location": "grocery store"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Drive me to the nearest airport with a stop at a gas station and an EV charging station.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "nearby"
+                },
+                {
+                    "search": "EV charging station",
+                    "location": "nearby"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I want to go to the beach with a stop at a convenience store on the way to buy snacks.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "convenience store",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Take me to the nearest hospital, and then find a parking spot nearby.",
+        "structured": {
+            "start": "current_location",
+            "search": "hospital",
+            "location": "nearest",
+            "parking": "nearby"
+        }
+    },
+    {
+        "query": "Plan a route from Boston to Miami with stops at New York City, Washington DC, and Orlando.",
+        "structured": {
+            "start": "Boston",
+            "stops": [
+                "New York City",
+                "Washington DC",
+                "Orlando"
+            ],
+            "end": "Miami"
+        }
+    },
+    {
+        "query": "Find me the best route to the museum and avoid all tolls along the way.",
+        "structured": {
+            "start": "current_location",
+            "end": "museum",
+            "avoid": [
+                "tolls"
+            ],
+            "preference": "best_route"
+        }
+    },
+    {
+        "query": "I want to take a scenic route from Los Angeles to San Francisco, stopping at some national parks.",
+        "structured": {
+            "start": "Los Angeles",
+            "stops": [
+                {
+                    "search": "national park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "San Francisco",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan my trip from Seattle to Portland with a stop at a bakery and a park for a break.",
+        "structured": {
+            "start": "Seattle",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Portland"
+        }
+    },
+    {
+        "query": "Take me from my home to the concert hall, but I need to park near the venue.",
+        "structured": {
+            "start": "home",
+            "end": "concert hall",
+            "parking": "near venue"
+        }
+    },
+    {
+        "query": "Find a way to avoid heavy traffic from my office to the airport while passing through downtown.",
+        "structured": {
+            "start": "office",
+            "end": "airport",
+            "avoid_traffic": true,
+            "route_through": "downtown"
+        }
+    },
+    {
+        "query": "Drive me from the hotel to the convention center with a stop at a restaurant on the way for lunch.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "convention center"
+        }
+    },
+    {
+        "query": "I need to go from the city center to the outskirts with a stop at a grocery store and a park along the way.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                {
+                    "search": "grocery store",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "outskirts"
+        }
+    },
+    {
+        "query": "Find a route from my current location to the train station, but avoid any road with high construction traffic.",
+        "structured": {
+            "start": "current_location",
+            "end": "train station",
+            "avoid_traffic": "construction"
+        }
+    },
+    {
+        "query": "I need to travel to a different city but stop in a town along the way to pick up my friend, and then continue to my destination.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "town",
+                    "pick_up": "friend"
+                }
+            ],
+            "end": "destination"
+        }
+    },
+    {
+        "query": "Take me to the nearest shopping mall and then find the quickest route to my house.",
+        "structured": {
+            "start": "current_location",
+            "search": "mall",
+            "location": "nearest",
+            "end": "home",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a trip from Denver to Phoenix with stops at a winery and a hiking trail.",
+        "structured": {
+            "start": "Denver",
+            "stops": [
+                {
+                    "search": "winery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "hiking trail",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Phoenix"
+        }
+    },
+    {
+        "query": "Find a way to go from the airport to the hotel but avoid highways and toll roads.",
+        "structured": {
+            "start": "airport",
+            "end": "hotel",
+            "avoid": [
+                "highways",
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Plan my day trip from Chicago to a nearby park and then to a famous food truck park.",
+        "structured": {
+            "start": "Chicago",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "nearby"
+                },
+                {
+                    "search": "food truck park",
+                    "location": "on_route"
+                }
+            ]
+        }
+    },
+    {
+        "query": "Take me from downtown to a supermarket and then to a coffee shop for a break.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ]
+        }
+    },
+    {
+        "query": "I need to go from my house to the library, then to a bakery, and finally to the park for a picnic.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "library"
+                },
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ]
+        }
+    },
+    {
+        "query": "I need to go from my house to the gym, then to the library, and finally to the grocery store before I head back home.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "location": "gym"
+                },
+                {
+                    "location": "library"
+                },
+                {
+                    "location": "grocery store"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Plan a road trip from Chicago to Nashville with a stop at a historical museum, a famous restaurant, and a national park.",
+        "structured": {
+            "start": "Chicago",
+            "stops": [
+                {
+                    "search": "historical museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "famous restaurant",
+                    "location": "on_route"
+                },
+                {
+                    "search": "national park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Nashville"
+        }
+    },
+    {
+        "query": "I need to go from my apartment to the airport but stop by a friend's house to pick up a package.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "location": "friend's house",
+                    "action": "pick up package"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Drive me from the hotel to the convention center, then to a local restaurant, and finally back to the hotel.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                {
+                    "location": "convention center"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "local"
+                }
+            ],
+            "end": "hotel"
+        }
+    },
+    {
+        "query": "Take me from New York to Boston, with a stop at a famous coffee shop and then a park for a short break.",
+        "structured": {
+            "start": "New York",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "famous"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Boston"
+        }
+    },
+    {
+        "query": "Plan a route from Miami to Orlando, but avoid the highway and take a scenic route with a stop at a local restaurant.",
+        "structured": {
+            "start": "Miami",
+            "end": "Orlando",
+            "avoid": [
+                "highways"
+            ],
+            "preference": "scenic",
+            "stops": [
+                {
+                    "search": "local restaurant",
+                    "location": "on_route"
+                }
+            ]
+        }
+    },
+    {
+        "query": "I want to go to the stadium but stop by a bank and the post office before.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium"
+        }
+    },
+    {
+        "query": "Drive me from home to work and stop by a gas station on the way to refuel.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "I need to go to the city center, but first stop at the park and then visit a bookstore along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "city center"
+        }
+    },
+    {
+        "query": "Plan a road trip from Los Angeles to Seattle, stopping at Santa Barbara, Monterey, and Portland along the way.",
+        "structured": {
+            "start": "Los Angeles",
+            "stops": [
+                "Santa Barbara",
+                "Monterey",
+                "Portland"
+            ],
+            "end": "Seattle"
+        }
+    },
+    {
+        "query": "I need to go to a meeting, but first I have to pick up my colleague from their place and then grab coffee on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "colleague's place",
+                    "action": "pick up"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "meeting location"
+        }
+    },
+    {
+        "query": "Find a route from my house to the beach with a quick stop at a food truck for lunch.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "food truck",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "I need to go to the theater but want to stop at a restaurant on the way and avoid the busiest roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "theater",
+            "avoid": [
+                "busiest roads"
+            ]
+        }
+    },
+    {
+        "query": "Take me to a park for a picnic, but I need to stop by the bank first.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                }
+            ],
+            "end": "park"
+        }
+    },
+    {
+        "query": "Drive me to the shopping mall and then to a nearby movie theater, but avoid toll roads along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "shopping mall",
+                    "location": "on_route"
+                },
+                {
+                    "search": "movie theater",
+                    "location": "on_route"
+                }
+            ],
+            "end": "movie theater",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "Find the fastest route to my office but stop by the supermarket for 15 minutes.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route",
+                    "duration": 15
+                }
+            ],
+            "end": "office",
+            "preference": "fastest"
+        }
+    },
+    {
+        "query": "Plan a route to the airport with a stop at a gas station and an EV charging station along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "EV charging station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Take me to the nearest hospital and then find a parking spot nearby.",
+        "structured": {
+            "start": "current_location",
+            "search": "hospital",
+            "location": "nearest",
+            "parking": "nearby"
+        }
+    },
+    {
+        "query": "I want to drive from the city center to the coast with a stop at a coffee shop and a museum on the way.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                }
+            ],
+            "end": "coast"
+        }
+    },
+    {
+        "query": "Plan a route from my house to the park, but make a stop at a bookstore and avoid toll roads.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "park",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "Drive me from the hotel to a concert and then stop by a fast-food restaurant on the way.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "concert"
+        }
+    },
+    {
+        "query": "I want to go from the airport to my house with a stop at a pharmacy and avoid traffic.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                }
+            ],
+            "end": "house",
+            "preference": "avoid_traffic"
+        }
+    },
+    {
+        "query": "Take me from downtown to the university with a stop for lunch at a restaurant along the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "Drive me from home to work with a quick stop at the dry cleaners and a gas station on the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "dry cleaners",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "I need to go to the movie theater but stop at a coffee shop and a park on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "movie theater"
+        }
+    },
+    {
+        "query": "Plan a scenic route from San Diego to Los Angeles with a stop at a beach for a walk.",
+        "structured": {
+            "start": "San Diego",
+            "stops": [
+                {
+                    "search": "beach",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Los Angeles",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me to the nearest park, but I want to stop at a bakery on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                }
+            ],
+            "end": "park"
+        }
+    },
+    {
+        "query": "I need to go from home to the hospital with a stop at the post office for 10 minutes.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route",
+                    "duration": 10
+                }
+            ],
+            "end": "hospital"
+        }
+    },
+    {
+        "query": "Find me a route to the airport with a stop at a convenience store along the way to grab snacks.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "convenience store",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Drive me from my house to the zoo with a stop at a coffee shop for a quick break.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "Plan a road trip from Portland to San Francisco with a stop at a vineyard and a park for a hike.",
+        "structured": {
+            "start": "Portland",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "San Francisco"
+        }
+    },
+    {
+        "query": "Find me a route from my home to the gym with a stop at a supermarket and avoid highways.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route"
+                }
+            ],
+            "end": "gym",
+            "avoid": [
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "I need to go to the stadium but stop by a local restaurant on the way and avoid toll roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "Take me from my office to the airport but make a stop at a gas station and a fast-food restaurant.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Drive me from downtown to the park with a stop at a bookstore and avoid any major roads under construction.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "park",
+            "avoid_traffic": "construction"
+        }
+    },
+    {
+        "query": "Take me from home to the airport, but first stop at a post office to drop off a package.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route",
+                    "action": "drop off package"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I want to visit the museum, then go to a park, and finally grab a bite at a restaurant, all on my way home.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Find me a route from downtown to the beach, but stop at a coffee shop and a gas station along the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Plan a scenic road trip from Los Angeles to San Francisco, with a stop at a national park and a vineyard.",
+        "structured": {
+            "start": "Los Angeles",
+            "stops": [
+                {
+                    "search": "national park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                }
+            ],
+            "end": "San Francisco",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "I need to go to the city center, but first stop at the library for an hour, then grab lunch at a nearby restaurant.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "library",
+                    "location": "on_route",
+                    "duration": 60
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "city center"
+        }
+    },
+    {
+        "query": "Take me to the concert, but stop at a gas station and a fast-food restaurant on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "concert"
+        }
+    },
+    {
+        "query": "I want to go to the zoo, but first stop by the bookstore for 20 minutes and then grab a coffee.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bookstore",
+                    "location": "on_route",
+                    "duration": 20
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "Drive me from home to work with a quick stop at the bank and a pharmacy on the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "Plan a road trip from New York to Boston with stops at a historical site and a local restaurant along the way.",
+        "structured": {
+            "start": "New York",
+            "stops": [
+                {
+                    "search": "historical site",
+                    "location": "on_route"
+                },
+                {
+                    "search": "local restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Boston"
+        }
+    },
+    {
+        "query": "Take me to the stadium with a stop at a park for a short walk and avoid any toll roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium",
+            "avoid": [
+                "toll roads"
+            ]
+        }
+    },
+    {
+        "query": "I need to visit the museum, then go to a caf\u00e9 for coffee, and finally stop by the grocery store before heading home.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                },
+                {
+                    "search": "grocery store",
+                    "location": "on_route"
+                }
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "Find me a route to the airport with a stop at a gas station and a restaurant for breakfast.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "breakfast"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Plan a road trip to the mountains, stopping at a local bakery and a scenic viewpoint along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "scenic viewpoint",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mountains"
+        }
+    },
+    {
+        "query": "Take me to the shopping mall, but stop at a park and a bookstore on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "shopping mall"
+        }
+    },
+    {
+        "query": "I need to get to the doctor\u2019s office but stop by the post office to send a package and then visit a supermarket.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route",
+                    "action": "send package"
+                },
+                {
+                    "search": "supermarket",
+                    "location": "on_route"
+                }
+            ],
+            "end": "doctor's office"
+        }
+    },
+    {
+        "query": "Plan a route from the office to my house with a stop at a coffee shop for 15 minutes and a gas station along the way.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route",
+                    "duration": 15
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "house"
+        }
+    },
+    {
+        "query": "Take me from downtown to the park with a stop at a museum and a local caf\u00e9 along the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                }
+            ],
+            "end": "park"
+        }
+    },
+    {
+        "query": "Drive me from my apartment to the airport with a stop at a pharmacy and a convenience store on the way.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                },
+                {
+                    "search": "convenience store",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I want to go to a conference but first stop by a friend\u2019s house to pick up a document and then grab lunch.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "location": "friend's house",
+                    "action": "pick up document"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "conference"
+        }
+    },
+    {
+        "query": "Take me to the library, but first stop at a grocery store to buy some snacks, then a coffee shop for a break.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "grocery store",
+                    "location": "on_route",
+                    "action": "buy snacks"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "library"
+        }
+    },
+    {
+        "query": "Drive me from home to the beach with a stop at a fast-food restaurant and a park for a short break.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Plan a trip to the mountain resort with a stop at a vineyard and a historic site along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "historic site",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mountain resort"
+        }
+    },
+    {
+        "query": "I need to get from home to the airport, but I need to stop at a pharmacy and a gas station before.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Take me to a hospital with a stop at a park for a quick walk and avoid any major construction zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "hospital",
+            "avoid": [
+                "construction zones"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route from home to the restaurant with stops at a museum, a park, and a gas station along the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "restaurant"
+        }
+    },
+    {
+        "query": "Take me to the zoo with a stop at a park for a short walk and a coffee shop on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "Drive me from downtown to the museum, but stop at a caf\u00e9 and a bookstore along the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "museum"
+        }
+    },
+    {
+        "query": "Plan a road trip from Portland to Seattle, stopping at a park and a vineyard along the way.",
+        "structured": {
+            "start": "Portland",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Seattle"
+        }
+    },
+    {
+        "query": "I need to go to a concert, but first stop by the coffee shop for a break and then visit a bookstore.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "concert"
+        }
+    },
+    {
+        "query": "Take me to the city center, but stop at a pharmacy and a supermarket on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                },
+                {
+                    "search": "supermarket",
+                    "location": "on_route"
+                }
+            ],
+            "end": "city center"
+        }
+    },
+    {
+        "query": "Drive me from my apartment to the airport with a stop at a gas station and a caf\u00e9 on the way.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Plan a scenic drive from my house to the beach with a stop at a restaurant and a park along the way.",
+        "structured": {
+            "start": "house",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan a route from New York to Chicago with a stop at a bakery, a park, and a gas station along the way.",
+        "structured": {
+            "start": "New York",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Chicago"
+        }
+    },
+    {
+        "query": "I need to go from my apartment to the beach, but I want to stop by a coffee shop, then a gas station, and finally a park.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Take me to the airport from downtown but stop by the supermarket and a fast-food joint for lunch on the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I want to drive from my house to the museum, but I need to stop by the post office and a coffee shop first.",
+        "structured": {
+            "start": "house",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "museum"
+        }
+    },
+    {
+        "query": "Plan a road trip from San Francisco to Los Angeles, but make sure to stop at a vineyard, a park, and a historical site.",
+        "structured": {
+            "start": "San Francisco",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "historical site",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Los Angeles"
+        }
+    },
+    {
+        "query": "I want to go to the stadium for a game, but I need to stop at a restaurant and a bookstore along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "dinner"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium"
+        }
+    },
+    {
+        "query": "Take me to the convention center, but stop at a fast-food restaurant for breakfast and a park for a short walk.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route",
+                    "meal": "breakfast"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "convention center"
+        }
+    },
+    {
+        "query": "I need to go from my apartment to the doctor\u2019s office, but first stop at the pharmacy and a coffee shop on the way.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "doctor's office"
+        }
+    },
+    {
+        "query": "Plan a route to the beach with stops at a grocery store and a scenic overlook for pictures.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "grocery store",
+                    "location": "on_route"
+                },
+                {
+                    "search": "scenic overlook",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me to the airport, but stop at a gas station and a restaurant along the way for a quick meal.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I need to go from home to the park, but I want to stop by a bakery and a coffee shop along the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "park"
+        }
+    },
+    {
+        "query": "Drive me to the mall, but first stop at a bookstore, then a gas station for fuel, and finally a caf\u00e9.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mall"
+        }
+    },
+    {
+        "query": "I need to go to the hospital, but first stop at a bank and a restaurant on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                }
+            ],
+            "end": "hospital"
+        }
+    },
+    {
+        "query": "Plan a road trip to the mountains, but stop at a vineyard and a bakery along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mountains"
+        }
+    },
+    {
+        "query": "Take me from home to the university with a stop at a post office, a coffee shop, and a gas station.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "I want to go from the city center to the beach, but stop at a museum and a park along the way.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Take me to the concert hall, but make a stop at a fast-food restaurant and a bookstore for a quick browse.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "concert hall"
+        }
+    },
+    {
+        "query": "Plan a scenic route to the beach, but stop at a park and a caf\u00e9 along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Drive me from my house to the zoo, but first stop by a gas station, a bakery, and a park.",
+        "structured": {
+            "start": "house",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "I need to go to work, but stop at a restaurant for breakfast, a park for a walk, and a coffee shop along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "breakfast"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "Take me to the stadium, but stop by a supermarket, a coffee shop, and a fast-food restaurant on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium"
+        }
+    },
+    {
+        "query": "Plan a trip to the lake with stops at a gas station, a bakery, and a park for a walk along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "lake"
+        }
+    },
+    {
+        "query": "I want to go to the city museum, but stop at a post office, a caf\u00e9, and a bank along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                },
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                }
+            ],
+            "end": "museum"
+        }
+    },
+    {
+        "query": "Take me to the restaurant, but stop by a coffee shop and a gas station on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "restaurant"
+        }
+    },
+    {
+        "query": "Drive me to the zoo, but stop at a bakery and a park along the way for a quick snack and a stroll.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "I need to go to the airport, but I want to stop at a gas station, a restaurant, and a post office on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route"
+                },
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Take me from the city center to the convention, but stop by a grocery store, a coffee shop, and a park along the way.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                {
+                    "search": "grocery store",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "convention"
+        }
+    },
+    {
+        "query": "I want to go from downtown to the restaurant, but stop by the bank, a bookstore, and a fast food joint on the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "restaurant"
+        }
+    },
+    {
+        "query": "Plan a scenic route to the mountains with stops at a vineyard, a bakery, and a park along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mountains",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Plan a route from my home to the airport with stops at a coffee shop and a pharmacy on the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Take me from the city center to the hospital, but first stop by a post office and then grab a quick lunch.",
+        "structured": {
+            "start": "city center",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "hospital"
+        }
+    },
+    {
+        "query": "I want to go to the university, but I need to stop at the supermarket for groceries first and then visit a friend on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route",
+                    "action": "buy groceries"
+                },
+                {
+                    "search": "friend's house",
+                    "location": "on_route"
+                }
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "Find a route from New York to Boston, but make sure to stop at a vineyard and a scenic lookout along the way.",
+        "structured": {
+            "start": "New York",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "scenic lookout",
+                    "location": "on_route"
+                }
+            ],
+            "end": "Boston",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me from home to the beach, but stop at a park for a walk and a bookstore along the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "I need to go to work, but I have to stop by the bank and grab coffee at a caf\u00e9 first.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "Take me to the airport, but stop at a fast-food restaurant for breakfast and then a gas station for fuel.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route",
+                    "meal": "breakfast"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "I want to go from home to a conference, but first stop at the post office to mail a letter and grab a quick bite at a restaurant.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "post office",
+                    "location": "on_route",
+                    "action": "mail letter"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "conference"
+        }
+    },
+    {
+        "query": "Plan a road trip to the mountains, but stop at a bakery and a park for a hike along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mountains"
+        }
+    },
+    {
+        "query": "I need to go to the hospital, but I need to stop by the pharmacy and then visit a friend on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                },
+                {
+                    "search": "friend's house",
+                    "location": "on_route"
+                }
+            ],
+            "end": "hospital"
+        }
+    },
+    {
+        "query": "Take me to the zoo, but stop at a caf\u00e9 for a coffee break and a gas station along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "zoo"
+        }
+    },
+    {
+        "query": "I want to drive from the city to the countryside, but make sure to stop at a museum and a local market on the way.",
+        "structured": {
+            "start": "city",
+            "stops": [
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                },
+                {
+                    "search": "local market",
+                    "location": "on_route"
+                }
+            ],
+            "end": "countryside"
+        }
+    },
+    {
+        "query": "Take me to the city park, but stop at a bookstore, then a coffee shop along the way for a break.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "city park"
+        }
+    },
+    {
+        "query": "I want to go to the stadium, but stop at a fast-food joint and a gas station on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium"
+        }
+    },
+    {
+        "query": "Plan a scenic route to the lake with stops at a park and a restaurant for lunch.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "lake",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me from home to work but stop by the bank and then a coffee shop along the way.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "I need to go from my apartment to the grocery store with a quick stop at the gym along the way.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                {
+                    "search": "gym",
+                    "location": "on_route"
+                }
+            ],
+            "end": "grocery store"
+        }
+    },
+    {
+        "query": "Plan a route from the city to the beach with a stop at a historical landmark and a local caf\u00e9.",
+        "structured": {
+            "start": "city",
+            "stops": [
+                {
+                    "search": "historical landmark",
+                    "location": "on_route"
+                },
+                {
+                    "search": "local caf\u00e9",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Take me to the doctor\u2019s office, but stop by the pharmacy to pick up medication first.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route",
+                    "action": "pick up medication"
+                }
+            ],
+            "end": "doctor's office"
+        }
+    },
+    {
+        "query": "I need to go to the gym, but I need to stop at a bakery and then a caf\u00e9 along the way for some snacks.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "bakery",
+                    "location": "on_route"
+                },
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route",
+                    "meal": "snacks"
+                }
+            ],
+            "end": "gym"
+        }
+    },
+    {
+        "query": "Drive me to the restaurant, but make sure to stop at a park and a bookstore for a quick browse.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "restaurant"
+        }
+    },
+    {
+        "query": "Plan a road trip to the national park, but first stop at a vineyard and a museum along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "museum",
+                    "location": "on_route"
+                }
+            ],
+            "end": "national park"
+        }
+    },
+    {
+        "query": "Take me from downtown to the stadium, but stop at a coffee shop and a bookstore along the way.",
+        "structured": {
+            "start": "downtown",
+            "stops": [
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                },
+                {
+                    "search": "bookstore",
+                    "location": "on_route"
+                }
+            ],
+            "end": "stadium"
+        }
+    },
+    {
+        "query": "Drive me to the concert venue but stop at a fast-food restaurant and a gas station along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                },
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                }
+            ],
+            "end": "concert venue"
+        }
+    },
+    {
+        "query": "I need to visit a friend, but I have to stop by the grocery store and a coffee shop before.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "grocery store",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "friend's house"
+        }
+    },
+    {
+        "query": "Take me to the city center, but stop at a pharmacy and a park for a quick walk along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "pharmacy",
+                    "location": "on_route"
+                },
+                {
+                    "search": "park",
+                    "location": "on_route"
+                }
+            ],
+            "end": "city center"
+        }
+    },
+    {
+        "query": "Plan a scenic drive to the mountain resort with stops at a vineyard and a historic site along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "vineyard",
+                    "location": "on_route"
+                },
+                {
+                    "search": "historic site",
+                    "location": "on_route"
+                }
+            ],
+            "end": "mountain resort",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Take me to the city library, but stop at a caf\u00e9 and a post office along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "caf\u00e9",
+                    "location": "on_route"
+                },
+                {
+                    "search": "post office",
+                    "location": "on_route"
+                }
+            ],
+            "end": "library"
+        }
+    },
+    {
+        "query": "I need to go to work, but first stop by the bank and then grab lunch at a restaurant.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                {
+                    "search": "bank",
+                    "location": "on_route"
+                },
+                {
+                    "search": "restaurant",
+                    "location": "on_route",
+                    "meal": "lunch"
+                }
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "Take me to the university with a stop at a gas station and a fast-food restaurant on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "university"
+        }
+    },
+    {
+        "query": "I need to go to the airport, but first stop by the supermarket for some snacks and then grab coffee at a caf\u00e9.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "supermarket",
+                    "location": "on_route",
+                    "action": "buy snacks"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Drive me to the concert hall with stops at a park and a coffee shop along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                {
+                    "search": "park",
+                    "location": "on_route"
+                },
+                {
+                    "search": "coffee shop",
+                    "location": "on_route"
+                }
+            ],
+            "end": "concert hall"
+        }
+    },
+    {
+        "query": "Take me from the city to the beach with a stop at a gas station and a fast-food restaurant along the way.",
+        "structured": {
+            "start": "city",
+            "stops": [
+                {
+                    "search": "gas station",
+                    "location": "on_route"
+                },
+                {
+                    "search": "fast food",
+                    "location": "on_route"
+                }
+            ],
+            "end": "beach"
+        }
+    },
+    {
+        "query": "Plan a route from my home to my office with stops at a daycare, a coffee shop, and a gas station.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "daycare",
+                "coffee shop",
+                "gas station"
+            ],
+            "end": "office"
+        }
+    },
+    {
+        "query": "Navigate to the airport but stop at a hotel and pick up dry cleaning on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "hotel",
+                "dry cleaning"
+            ],
+            "end": "airport"
+        }
+    },
+    {
+        "query": "Drive from Boston to New York with EV charging every 150 miles and avoid tolls.",
+        "structured": {
+            "start": "Boston",
+            "end": "New York",
+            "vehicle": "EV",
+            "charge_interval": 150,
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Plan a trip from Dallas to Austin with lunch at a BBQ place and a scenic viewpoint.",
+        "structured": {
+            "start": "Dallas",
+            "stops": [
+                "BBQ restaurant",
+                "scenic viewpoint"
+            ],
+            "end": "Austin",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Route me to the beach avoiding highways and stop at a pet store on the way.",
+        "structured": {
+            "start": "current_location",
+            "end": "beach",
+            "avoid": [
+                "highways"
+            ],
+            "stops": [
+                "pet store"
+            ]
+        }
+    },
+    {
+        "query": "Take me to work but stop at a bakery and drop off a parcel at the post office.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bakery",
+                "post office"
+            ],
+            "end": "work"
+        }
+    },
+    {
+        "query": "Plan a shopping trip starting from my home to the mall with stops at Target, Best Buy, and a food court.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "Target",
+                "Best Buy",
+                "food court"
+            ],
+            "end": "mall"
+        }
+    },
+    {
+        "query": "Find a fast route to the hospital but stop at a pharmacy first and avoid traffic.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pharmacy"
+            ],
+            "end": "hospital",
+            "preference": "fastest",
+            "avoid": "traffic"
+        }
+    },
+    {
+        "query": "Drive from campus to downtown with stops at a library, bookstore, and a tea shop.",
+        "structured": {
+            "start": "campus",
+            "stops": [
+                "library",
+                "bookstore",
+                "tea shop"
+            ],
+            "end": "downtown"
+        }
+    },
+    {
+        "query": "Take me to the train station by 8 AM but stop at a breakfast caf\u00e9 and fuel up.",
+        "structured": {
+            "start": "current_location",
+            "end": "train station",
+            "arrive_by": "08:00",
+            "stops": [
+                "breakfast caf\u00e9",
+                "gas station"
+            ]
+        }
+    },
+    {
+        "query": "Route from San Diego to Las Vegas avoiding rain and stopping at a rest area and diner.",
+        "structured": {
+            "start": "San Diego",
+            "end": "Las Vegas",
+            "avoid_weather": "rain",
+            "stops": [
+                "rest area",
+                "diner"
+            ]
+        }
+    },
+    {
+        "query": "Get me from hotel to airport with a 30-minute stop at Starbucks and avoid construction zones.",
+        "structured": {
+            "start": "hotel",
+            "end": "airport",
+            "stops": [
+                {
+                    "place": "Starbucks",
+                    "duration": 30
+                }
+            ],
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Plan a road trip from Miami to Orlando with kid-friendly parks and lunch stops.",
+        "structured": {
+            "start": "Miami",
+            "end": "Orlando",
+            "stops": [
+                "kid-friendly park",
+                "restaurant"
+            ],
+            "preference": "family_friendly"
+        }
+    },
+    {
+        "query": "Drive to school and stop at grocery store, gas station, and then drop a friend at library.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery store",
+                "gas station",
+                "library"
+            ],
+            "end": "school"
+        }
+    },
+    {
+        "query": "Navigate from Seattle to Portland and ensure an EV charging stop every 100 miles and avoid steep hills.",
+        "structured": {
+            "start": "Seattle",
+            "end": "Portland",
+            "vehicle": "EV",
+            "charge_interval": 100,
+            "avoid": [
+                "steep_hills"
+            ]
+        }
+    },
+    {
+        "query": "Take the most fuel-efficient route to the university, stopping by a coffee shop and bookstore.",
+        "structured": {
+            "start": "current_location",
+            "end": "university",
+            "preference": "fuel_efficient",
+            "stops": [
+                "coffee shop",
+                "bookstore"
+            ]
+        }
+    },
+    {
+        "query": "Drive from home to the clinic with a mandatory stop at the pharmacy and reach by 3 PM.",
+        "structured": {
+            "start": "home",
+            "end": "clinic",
+            "stops": [
+                "pharmacy"
+            ],
+            "arrive_by": "15:00"
+        }
+    },
+    {
+        "query": "Plan a scenic drive to the countryside with stops at a lake, a flower field, and an antique store.",
+        "structured": {
+            "start": "current_location",
+            "end": "countryside",
+            "stops": [
+                "lake",
+                "flower field",
+                "antique store"
+            ],
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "I want to go to downtown avoiding highways and stopping by a vegan restaurant and art museum.",
+        "structured": {
+            "start": "current_location",
+            "end": "downtown",
+            "avoid": [
+                "highways"
+            ],
+            "stops": [
+                "vegan restaurant",
+                "art museum"
+            ]
+        }
+    },
+    {
+        "query": "Find the safest route to the school avoiding crime-prone areas and construction.",
+        "structured": {
+            "start": "current_location",
+            "end": "school",
+            "avoid": [
+                "crime_zones",
+                "construction"
+            ],
+            "preference": "safest"
+        }
+    },
+    {
+        "query": "Take me to the vet via the pet supply store and the bakery.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pet supply store",
+                "bakery"
+            ],
+            "end": "vet"
+        }
+    },
+    {
+        "query": "Plan a drive from my office to the gym, stopping at the dry cleaners and avoiding toll roads.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "dry cleaners"
+            ],
+            "end": "gym",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "I want to go to my cousin\u2019s house with a stop at the florist and bookstore on a local route.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "florist",
+                "bookstore"
+            ],
+            "end": "cousin's house",
+            "preference": "local_roads"
+        }
+    },
+    {
+        "query": "Navigate to the stadium with stops at a convenience store and avoiding flooded areas.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "convenience store"
+            ],
+            "end": "stadium",
+            "avoid_weather": "flooded"
+        }
+    },
+    {
+        "query": "Take me to UTA by 10 AM with a stop for coffee and skip construction areas.",
+        "structured": {
+            "start": "current_location",
+            "end": "UTA",
+            "stops": [
+                "coffee shop"
+            ],
+            "arrive_by": "10:00",
+            "avoid": [
+                "construction"
+            ]
+        }
+    },
+    {
+        "query": "Drive from Denver to Salt Lake City with a night stopover in Grand Junction and stop at a steakhouse.",
+        "structured": {
+            "start": "Denver",
+            "end": "Salt Lake City",
+            "stops": [
+                "Grand Junction",
+                "steakhouse"
+            ]
+        }
+    },
+    {
+        "query": "Plan a weekend road trip with camping gear pickup and grocery shopping before heading to the mountains.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "camping store",
+                "grocery store"
+            ],
+            "end": "mountains"
+        }
+    },
+    {
+        "query": "Go to the library but first drop my friend at the bus stop and avoid school zones.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bus stop"
+            ],
+            "end": "library",
+            "avoid": [
+                "school_zones"
+            ]
+        }
+    },
+    {
+        "query": "Drive from Los Angeles to San Diego with a visit to an aquarium and stopping every 2 hours to rest.",
+        "structured": {
+            "start": "Los Angeles",
+            "end": "San Diego",
+            "stops": [
+                "aquarium"
+            ],
+            "rest_interval": "2h"
+        }
+    },
+    {
+        "query": "I need to pick up my mom from the airport at 5 PM and stop by the bakery beforehand.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bakery"
+            ],
+            "end": "airport",
+            "arrive_by": "17:00"
+        }
+    },
+    {
+        "query": "Route from hotel to mall stopping at electronics store, optician, and food court.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "electronics store",
+                "optician",
+                "food court"
+            ],
+            "end": "mall"
+        }
+    },
+    {
+        "query": "Take me to the dentist and stop at the pharmacy and grocery store along the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pharmacy",
+                "grocery store"
+            ],
+            "end": "dentist"
+        }
+    },
+    {
+        "query": "I need to reach the theater by 6 PM, stop at the florist and avoid heavy rain areas.",
+        "structured": {
+            "start": "current_location",
+            "end": "theater",
+            "stops": [
+                "florist"
+            ],
+            "arrive_by": "18:00",
+            "avoid_weather": "heavy_rain"
+        }
+    },
+    {
+        "query": "Drive me from my hostel to campus, stopping at a printing shop and avoiding school traffic zones.",
+        "structured": {
+            "start": "hostel",
+            "stops": [
+                "printing shop"
+            ],
+            "end": "campus",
+            "avoid": [
+                "school_traffic"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route from Houston to Baton Rouge with EV charging stops and a diner lunch break.",
+        "structured": {
+            "start": "Houston",
+            "end": "Baton Rouge",
+            "vehicle": "EV",
+            "charge_interval": 120,
+            "stops": [
+                "diner"
+            ]
+        }
+    },
+    {
+        "query": "Go to the swimming pool with a stop at the sports store and take the shortest route.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "sports store"
+            ],
+            "end": "swimming pool",
+            "preference": "shortest"
+        }
+    },
+    {
+        "query": "Take me to the laundromat with a coffee break and avoid areas with traffic jams.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "coffee shop"
+            ],
+            "end": "laundromat",
+            "avoid": [
+                "traffic"
+            ]
+        }
+    },
+    {
+        "query": "I want to go to the mechanic and grab groceries and snacks on the way.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "grocery store",
+                "convenience store"
+            ],
+            "end": "mechanic"
+        }
+    },
+    {
+        "query": "Drive to the hiking trail via scenic areas and avoid road closures and toll booths.",
+        "structured": {
+            "start": "current_location",
+            "end": "hiking trail",
+            "preference": "scenic",
+            "avoid": [
+                "road_closures",
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Navigate from work to the art gallery with a dinner stop and avoiding rush hour.",
+        "structured": {
+            "start": "work",
+            "stops": [
+                "restaurant"
+            ],
+            "end": "art gallery",
+            "avoid": [
+                "rush_hour"
+            ]
+        }
+    },
+    {
+        "query": "I need to go to the gym with stops at the pharmacy and smoothie bar on a bike route.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "pharmacy",
+                "smoothie bar"
+            ],
+            "end": "gym",
+            "mode": "bike"
+        }
+    },
+    {
+        "query": "Plan a route from home to school with a friend pickup and morning breakfast stop.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "friend's house",
+                "breakfast caf\u00e9"
+            ],
+            "end": "school"
+        }
+    },
+    {
+        "query": "I need to reach my lawyer\u2019s office at 2 PM, with a coffee stop and avoid city center.",
+        "structured": {
+            "start": "current_location",
+            "end": "lawyer's office",
+            "arrive_by": "14:00",
+            "stops": [
+                "coffee shop"
+            ],
+            "avoid": [
+                "city center"
+            ]
+        }
+    },
+    {
+        "query": "Go from motel to train station with a restroom stop and bakery detour, avoiding foggy areas.",
+        "structured": {
+            "start": "motel",
+            "stops": [
+                "restroom",
+                "bakery"
+            ],
+            "end": "train station",
+            "avoid_weather": "fog"
+        }
+    },
+    {
+        "query": "Drive from home to the dentist, stopping at the school to drop off my kids and avoiding traffic hotspots.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "school"
+            ],
+            "end": "dentist",
+            "avoid": [
+                "traffic"
+            ]
+        }
+    },
+    {
+        "query": "Plan a route from office to downtown, stopping at the tailor and picking up food from a restaurant.",
+        "structured": {
+            "start": "office",
+            "stops": [
+                "tailor",
+                "restaurant"
+            ],
+            "end": "downtown"
+        }
+    },
+    {
+        "query": "Take me to the airport via the bank and the grocery store, and avoid flooded roads.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bank",
+                "grocery store"
+            ],
+            "end": "airport",
+            "avoid_weather": "flooded"
+        }
+    },
+    {
+        "query": "Navigate to the college with stops at library, ATM, and the bookstore, and arrive by 9 AM.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "library",
+                "ATM",
+                "bookstore"
+            ],
+            "end": "college",
+            "arrive_by": "09:00"
+        }
+    },
+    {
+        "query": "Route from UTA to DFW Airport with EV charging stop and a quick snack at a diner.",
+        "structured": {
+            "start": "UTA",
+            "stops": [
+                "EV charging station",
+                "diner"
+            ],
+            "end": "DFW Airport"
+        }
+    },
+    {
+        "query": "Plan a trip from my apartment to the zoo with stops at bakery, toy store, and avoid highways.",
+        "structured": {
+            "start": "apartment",
+            "stops": [
+                "bakery",
+                "toy store"
+            ],
+            "end": "zoo",
+            "avoid": [
+                "highways"
+            ]
+        }
+    },
+    {
+        "query": "Drive from home to friend's place stopping at mechanic, barber shop and pet clinic.",
+        "structured": {
+            "start": "home",
+            "stops": [
+                "mechanic",
+                "barber shop",
+                "pet clinic"
+            ],
+            "end": "friend's house"
+        }
+    },
+    {
+        "query": "Take me to the bank before my 11 AM meeting at the courthouse and avoid road closures.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "bank"
+            ],
+            "end": "courthouse",
+            "arrive_by": "11:00",
+            "avoid": [
+                "road_closures"
+            ]
+        }
+    },
+    {
+        "query": "Plan a scenic weekend drive to the countryside with a stop at a lake and picnic area.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "lake",
+                "picnic area"
+            ],
+            "end": "countryside",
+            "preference": "scenic"
+        }
+    },
+    {
+        "query": "Navigate from the university to a friend\u2019s house stopping at a Chinese restaurant and gas station.",
+        "structured": {
+            "start": "university",
+            "stops": [
+                "Chinese restaurant",
+                "gas station"
+            ],
+            "end": "friend's house"
+        }
+    },
+    {
+        "query": "Take me to the convention center by 1 PM with a pickup at the hostel and avoiding tolls.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "hostel"
+            ],
+            "end": "convention center",
+            "arrive_by": "13:00",
+            "avoid": [
+                "tolls"
+            ]
+        }
+    },
+    {
+        "query": "Route from my house to the mechanic stopping at hardware store and post office.",
+        "structured": {
+            "start": "house",
+            "stops": [
+                "hardware store",
+                "post office"
+            ],
+            "end": "mechanic"
+        }
+    },
+    {
+        "query": "Plan a route from hotel to city park with stops at vegan caf\u00e9 and antique store, avoiding rainy areas.",
+        "structured": {
+            "start": "hotel",
+            "stops": [
+                "vegan caf\u00e9",
+                "antique store"
+            ],
+            "end": "city park",
+            "avoid_weather": "rain"
+        }
+    },
+    {
+        "query": "Drive from airport to home via rental car drop-off and stopping at a late-night diner.",
+        "structured": {
+            "start": "airport",
+            "stops": [
+                "rental car return",
+                "diner"
+            ],
+            "end": "home"
+        }
+    },
+    {
+        "query": "I need to reach the embassy by 10:30 AM with a coffee break and stop at photo studio.",
+        "structured": {
+            "start": "current_location",
+            "stops": [
+                "coffee shop",
+                "photo studio"
+            ],
+            "end": "embassy",
+            "arrive_by": "10:30"
+        }
+    }
+]
