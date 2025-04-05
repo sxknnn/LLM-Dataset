@@ -10,14 +10,13 @@ The structure of the query must match the corresponding structured data. Ensure 
 
 ### Reporting:
 * If you find any issues, note the index number and describe the problem in the comment section.
-* If everything looks correct, simply write "No comment" in the comment section.
+* If everything looks correct, no need to do anything.
 
 ### How to Fill in the Excel Sheet:
 * Index Number: Enter the index number of the query with the error.
 * Query: Fill it by the same query.
 * Comment:
   * If there’s an issue (such as a mismatch or an irrelevant query), note the index number and describe the issue.
-
 
 ### For Example:
 ```
