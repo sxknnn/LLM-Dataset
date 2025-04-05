@@ -13,9 +13,36 @@ The structure of the query must match the corresponding structured data. Ensure 
 * If everything looks correct, simply write "No comment" in the comment section.
 
 ### How to Fill in the Excel Sheet:
-* Index Number: Enter the index number of the query.
-* Query: Write the natural language query.
-* Structured Data: Enter the corresponding structured data (JSON format).
+* Index Number: Enter the index number of the query with the error.
+* Query: Fill it by the same query.
 * Comment:
-  * If there are no issues, write "No comment."
-  * If there’s an issue (such as mismatch or irrelevant query), note the index number and describe the issue.
+  * If there’s an issue (such as a mismatch or an irrelevant query), note the index number and describe the issue.
+
+
+### For Example:
+```
+    {
+        "query": "Take me to the train station using public transport.",
+        "structured": {
+            "start": "current_location",
+            "end": "train station",
+            "mode": "public_transport"
+        },
+        "index": 8
+    },
+    {
+        "query": "I want to go to the beach but avoid toll roads.",
+        "structured": {
+            "start": "current_location",
+            "end": "beach",
+            "avoid": [
+                "tolls"
+            ]
+        },
+        "index": 9
+    },
+```
+| Index | Query | Comment |
+| ----- | ----- | ------- |
+| 8 | Take me to the train station using public transport. | Irrelevant Query |
+|  |  |  |
