@@ -1,0 +1,5 @@
+| Index         | Problem                                              | Comment                                               |
+| -----         | -----                                                | -------                                               |
+| 276,304,349   | Uses avoid_weather                                   | I'm not sure if avoid_weather is allowed              |
+| 338, 343, 409 | Uses search + location instead of predefined stops.  | There is no start/end location.                       |
+| 307, 366,490  | Includes vehicle: "EV" and charge_interval.          | Confirm if EV-specific routing is part of the schema. |
